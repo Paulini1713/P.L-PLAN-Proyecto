@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P.L Sobre Mi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Protest+Guerrilla&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/nosotros.css">
+    <script src="js/nosotros.js" defer></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="div-icono">
+            <a href="index.html" target="_blank">
+                <img src="assets/JPPLANICONO.png" alt="P.LPLANICONO" class="img-icono">
+            </a>
+        </div>
+        <nav class="nav isVisible">
+            <ul class="ul-nav">
+                <li class="li-nav">
+                    <a href="planes.html" target="_blank">Planes</a>
+                </li>
+                <li class="li-nav">
+                    <a href="casos.html" target="_blank">Casos de Éxito</a>
+                </li>
+                <li class="li-nav">
+                    <a href="nosotros.html">Sobre Mi</a>
+                </li>
+                <li class="li-nav">
+                    <a href="contacto.html" target="_blank">Contáctanos</a>
+                </li>
+            </ul>
+        </nav>
+
+        <button class="header-button">
+            <svg class="header-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+            </svg>
+        </button>
+
+    </header>
+
+    <main class="main">
+        <div class="div-img">
+            <h1 class="h1">P.L <br> <span class="nosotros">SOBRE MI</span></h1>
+        </div>
+
+        <section class="section-nosotros">
+            <div class="div-nosotros">
+                <h2 class="h2-jp">Paula</h2>
+                <div class="div-ella">
+                    <div class="div-item isActive">
+                        <img src="assets/ella1.jpg" alt="cambio ella 1">
+                        <p>Cuando comencé venía de problemas de salud, llevaba toda la vida haciendo deporte, pero no estaba en forma física </p>
+                    </div>
+                    <div class="div-item">
+                        <img src="assets/ella2.jpg" alt="cambio ella 2" loading="lazy">
+                        <p>Poco a poco con una rutina constante y esfuerzo, empecé a coger resistencia y fuerza.</p>
+                    </div>
+                    <div class="div-item">
+                        <img src="assets/ella3.jpg" alt="cambio ella 3" loading="lazy">
+                        <p>No fue un proceso fácil, ya que hay que dedicarle mucha constancia si queremos ver resultados reales, pero yo los neceistaba, era mi meta.</p>
+                    </div>
+                    <div class="div-item">
+                        <img src="assets/ella4.jpg" alt="cambio ella 4" loading="lazy">
+                        <p>Y todo esfuerzo da sus frutos, llegúe a estar en la forma física que yo buscaba, tras meses de esfuerzo, porque no me iba a rendir.</p>
+                    </div>
+                </div>
+                <button class="prev" onclick="cambiarSlide(-1)"></button>
+                <button class="next" onclick="cambiarSlide(1)"></button>
+            </div>
+        </section>
+
+        <section class="section-juntos">
+            <div class="div-empezar">
+                <h2 class="h2-juntos">Mi Historia</h2>
+                <div class="div-juntos">
+                    <div class="div-item isActive">
+                        <img src="assets/garaje1.jpg" alt="garaje 1">
+                    </div>
+                    <div class="div-item">
+                        <img src="assets/garaje2.jpg" alt="garaje 2" loading="lazy">
+                    </div>
+                    <div class="div-item">
+                        <img src="assets/garaje3.jpg" alt="garaje 3" loading="lazy">
+                    </div>
+                </div>
+                <button class="prev" onclick="cambiarSlide(-1)"></button>
+                <button class="next" onclick="cambiarSlide(1)"></button>
+                <p class="p-juntos">Todo empezó en un garaje, porque no importa donde se entrena, no valen las excusas. Cualquier cosa te vale si realmente quieres hacerlo. Empecé con cosas básicas, hasta que me monté un gimnasio con todo lo esencial que necesitaba, porque no necesitas gran cosa para cumplir tu meta, solo dedicación.</p>
+            </div>
+        </section>
+
+    </main>

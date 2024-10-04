@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 100%;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-size: 100%;
+    font-family: "Montserrat", sans-serif;
+}
+
+li{
+    list-style: none;
+}
+
+img{
+    display: block;
+}
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: .625rem 1.875rem;
+    border-radius: .625rem;
+    border: .125rem solid rgb(39, 24, 32);
+    box-shadow: .125rem .125rem .625rem rgb(42, 29, 36);
+    color: black;
+    background-color: rgb(173, 3, 252);
+}
+
+button:hover{
+    background-color: rgb(226, 43, 226);
+}
+.header{
+    width: 100%;
+    background-color: blueviolet;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: .625rem;
+
+}
+.div-icono{
+    
+}
+.img-icono{
+    width: 15%;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-left: 1.25rem;
+}
+.nav{
+    /*width: 95%;*/
+    min-height: 2.5rem;
+}
+.nav .isVisible{
+
+}
+.ul-nav{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 500;
+
+    padding: .625rem;
+}
+@media (max-width:54.6875rem){
+    .ul-nav{
+        display: none;
+        margin: .625rem;
+    }
+}
+.li-nav{
+    font-size: medium;
+    margin: 0 3.125rem 0;
+    font-weight: bold;
+}
+.li-nav:hover{
+    color: white;
+}
+a{
+    color: black;
+    text-decoration: none;
+    z-index: 1;
+}
+.header-button{
+    display: none;
+}
+.header-svg{
+    width: 2rem;
+    min-height: 2rem;
+    display: block;
+}
+
+@media (max-width: 54.6875rem){
+    .header-button{
+        display: block;
+    }
+    .ul-nav{
+        display: none;
+    }
+}
+.main{
+    width: 100%;
+}
+.div-img{
+    min-height: 85vh;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: end;
+    margin: 0 auto .625rem;
+    
+    position: relative;
+
+    background-image: url('../assets/entrada.jpg') ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+.nosotros{
+    color: blueviolet;
+}
+.img-empieza{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.img-empieza img{
+    width: 100%;
+    object-fit: cover;
+    padding: .1875rem;
+}
+.h1{
+    color: black;
+    font-size: 10vw;
+    font-family: "Protest Guerrilla", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: end;
+    margin-right: 6.25rem;
+}
+.contacto{
+    color: blueviolet;
+}
+
+.article-meta{
+    min-height: 25rem;
+    background-color: blueviolet;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.div-formulario{
+    padding: 1.25rem;
+}
+@media (max-width: 800px){
+    .div-formulario{
+        display: none;
+    }
+}
+.h3-formulario{
+    margin: 1.25rem auto 1.25rem;
+    font-size: larger;
+    text-align: center;
+}
+.p-formulario{
+    font-weight: 500;
+    font-size: large;
+    text-align: center;
+    letter-spacing: .125rem;
+}
+.formulario{
+    margin: auto;
+    width: 60%;
+    font-weight: 600;
+}
+@media (max-width: 800px){
+    .formulario{
+        width: 100%;
+    }
+}
+.carpeta{
+    width: 90%;
+    min-height: 3.125rem;
+    margin: auto;
+    font-size: medium;
+    font-weight: 600;
+}
+.mensaje{
+    width: 90%;
+    min-height: 5.625rem;
+    font-size: larger;
+    font-weight: 600;
+}
+.button-formulario{
+    border-radius: 25%;
+    border: .3125rem solid black;
+    padding: 1.25rem;
+    margin: auto;
+    font-weight: 600;
+    font-size: medium;
+}
+.footer-rrss{
+    width: 100%;
+    min-height: 3.125rem;
+    height: auto;
+
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+
+    gap: 1.25rem;
+}
+.instagram-cuenta{
+    height: auto;
+}
