@@ -281,7 +281,7 @@ a{
 
     background-color: rgb(157, 88, 223);
     padding: .625rem;
-    border-radius: 10%;
+    border-radius: 30%;
 
     position: relative;
     gap: 5rem;
@@ -289,6 +289,7 @@ a{
 .li-botones{
     opacity: 2;
     margin: 1.25rem auto;
+    font-weight: 600;
 }
 .parrafo{
     margin: 2.5rem auto;
@@ -297,8 +298,8 @@ a{
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    position: relative;
 
+    position: relative;
     text-align: center;
 }
 .parrafo-p{
@@ -306,12 +307,14 @@ a{
     position: absolute;
 }
 .li-botones.isVisible{
-    opacity: 4;
-    border: .25rem solid rgb(226, 43, 226);
-    border-radius: 40%;
-    padding: .3125rem;
+    opacity: 1;
+    border: .375rem solid rgb(226, 43, 226);
+    border-radius: 50%;
+    padding: .625rem;
+    background-color: rgb(226, 43, 226);
 }
 .parrafo-p.isVisible{
-    opacity: 4;
+    opacity: 1;
+    font-weight: 500;
 }
 

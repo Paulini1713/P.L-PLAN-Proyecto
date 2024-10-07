@@ -397,6 +397,7 @@ a{
     background-position: center center;
 
     border-radius: 10%;
+    
 }
 .img-el{
     margin: 0 .625rem 0;
@@ -407,8 +408,15 @@ a{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    
 
     border-radius: 10%;
+}
+.img-ella:hover{
+    transform: translateX(440px);
+}
+.img-el:hover{
+    transform: translateX(-440px);
 }
 .article-meta{
     min-height: 18.75rem;
@@ -517,6 +525,3 @@ a{
 }
 .h5-aviso{}
 .h5-politica{}
-.a[href*="http"]{
-    background: url(https://icons8.com/icon/48841/instagram) no-repeat 100%;
-}

@@ -207,10 +207,11 @@ p{
     max-width: 100%;
     border-radius: 10px;
 }
-
-.texto {
-    text-align: center;
-    margin-top: .625rem;
+.img:hover{
+    transform: scale(1.1);
+}
+.close:hover{
+    transform: none;
 }
 .oculto {
     display: none; 
@@ -224,7 +225,7 @@ p{
     border-radius: .125rem; 
     box-shadow: 0 .25rem .5rem rgba(0, 0, 0, 0.2); 
 }
-.main .section .texto{
+.texto{
     width: 50%;
     /*min-height: 400px;*/
     /*background-color: bisque;*/
@@ -234,13 +235,17 @@ p{
     flex-flow: column nowrap;
     justify-content: start;
     align-items: center;
+
+    text-align: center;
+    margin-top: .625rem;
 }
 
-.main .section .h2{
-    padding: 1.25rem;
-    margin: .625rem auto 1.25rem;
+.h2{
+    padding: .625rem;
+    margin: .625rem auto .625rem;
+    font-size: xx-large;
 }
-.main .section .texto .p{
+.p{
     width: 50%;
 
     /*background-color: blue;*/
@@ -252,13 +257,13 @@ p{
     justify-content: center;
     align-items: center;
 }
-.main .section .h3{
+.h3{
     padding: 1.25rem;
     margin: 1.875rem;
     border: .3125rem solid blueviolet;
 }
 
-.main .section.reverse{
+.section.reverse{
     background-color: white;
     display: flex;
     flex-direction: row-reverse;
