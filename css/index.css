@@ -261,6 +261,7 @@ a{
 }
 #div-proceso{
     /*min-height: 12.5rem;*/
+    height: auto;
     margin: 1.25rem;
 
     display: flex;
@@ -270,12 +271,12 @@ a{
 }
 #div-proceso-img{
     width: 40%;
+    height: auto;
 
     display: flex;
     flex-flow: column nowrap;
     justify-content: start;
     align-items: start;
-    margin-right: auto;
 }
 @media (max-width: 1100px){
     #div-proceso-img{
