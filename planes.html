@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Protest+Guerrilla&display=swap" rel="stylesheet">
     <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/planes.css">
-    <script src="js/index.js" defer></script>
+    <script src="js/planes.js" defer></script>
 </head>
 <body>
     
@@ -53,61 +53,102 @@
         </div>
 
         <section class="section">
-            <div class="div img">
+            <div class="div">
                 <img src="assets/h.jpg" alt="img pesa" class="img">
             </div>
             <div class="texto">
                 <h2 class="h2">Hipertrofia</h2>
-                <p>También conocido como aumento de masa muscular. Aumentar la masa muscular, verte más grande estando en forma</p>
+                <p class="p">También conocido como aumento de masa muscular. Aumentar la masa muscular, verte más grande estando en forma</p>
                 <button class="button-info">+ Info</button> 
             </div>
+            <div class="div oculto">
+                <button class="close-button">&times;</button>
+                <img src="assets/carouselh.jpg" alt="img oculta" class="img" loading="lazy">
+                <div class="texto oculto">
+                    <p class="p">Texto oculto en la primera sección.</p>
+                </div>
+                </div>
         </section>
 
         <section class="section reverse">
-            <div class="div img">
+            <div class="div">
                 <img src="assets/abd.jpg" alt="img abd" class="img">
             </div>
             <div class="texto">
              <h2 class="h2">Definición muscular</h2>
-            <p>O como puede llegar a sonar mejor, pérdida de peso, aunque no esté del todo bien dicho. Ya que sabemos que la pérdida de peso incluye masa muscular, por lo que podriamos diferenciar con pérdida de grasa y pérdida de masa muscular</p>
+            <p class="p">O como puede llegar a sonar mejor, pérdida de peso, aunque no esté del todo bien dicho. Ya que sabemos que la pérdida de peso incluye masa muscular, por lo que podriamos diferenciar con pérdida de grasa y pérdida de masa muscular</p>
             <button class="button-info">+ Info</button>
-          </div>
+            </div>
+            <div class="div oculto">
+                <button class="close-button">&times;</button>
+                <img src="assets/carouseld.jpg" alt="img oculta" class="img" loading="lazy">
+                <div class="texto oculto">
+                    <p class="p">Texto oculto en la primera sección.</p>
+                </div>
+                </div>
         </section>
 
         <section class="section">
-            <div class="div img">
+            <div class="div">
                 <img src="assets/entrenamiento.jpg" alt="img entrenamiento" class="img">
             </div>
             <div class="texto">
                 <h2 class="h2">Mantenimiento</h2>
-                <p>Estás genial tal y como estás, ¿no quieres cambiar nada, simplemente seguir tal y como estás?, este es el programa perfecto para ti</p>
+                <p class="p">Estás genial tal y como estás, ¿no quieres cambiar nada, simplemente seguir tal y como estás?, este es el programa perfecto para ti</p>
                 <button class="button-info">+ Info</button> 
             </div>
+            <div class="div oculto">
+                <button class="close-button">&times;</button>
+                <img src="assets/carouselm.jpg" alt="img oculta" class="img" loading="lazy">
+                <div class="texto oculto">
+                    <p class="p">Texto oculto en la primera sección.</p>
+                </div>
+                </div>
         </section>
 
         <section class="section reverse">
-            <div class="div img">
+            <div class="div">
                 <img src="assets/plancha.jpg" alt="img plancha" class="img">
             </div>
             <div class="texto">
              <h2 class="h2">Ponte en forma</h2>
-            <p>¿Te gustaría estar en forma físicamente? Ya puede ser visualmente o sentirte en forma, ser capaz de aguantar físicamente esfuerzos que no eres capaz de hacer. entonces estás en el sitio perfecto</p>
+            <p class="p">¿Te gustaría estar en forma físicamente? Ya puede ser visualmente o sentirte en forma, ser capaz de aguantar físicamente esfuerzos que no eres capaz de hacer. entonces estás en el sitio perfecto</p>
             <button class="button-info">+ Info</button>
-          </div>
+            </div>
+            <div class="div oculto">
+                <button class="close-button">&times;</button>
+                <img src="assets/carouself.jpg" alt="img oculta" class="img" loading="lazy">
+                <div class="texto oculto">
+                    <p class="p">Texto oculto en la primera sección.</p>
+                </div>
+                </div>
         </section>
 
         <section class="section">
-            <div class="div img">
+            <div class="div">
                 <img src="assets/embarazadas.jpg" alt="img embarazadas" class="img">
             </div>
             <div class="texto">
                 <h2 class="h2">Planes para embarazadas</h2>
-                <p>¿Viene tú bebé en camino? No te preocupes, porque tenemos entrenamientos adaptados para que estés en forma sin perjudicarte de ninguna manera. Porque nada puede pararte</p>
+                <p class="p">¿Viene tú bebé en camino? No te preocupes, porque tenemos entrenamientos adaptados para que estés en forma sin perjudicarte de ninguna manera. Porque nada puede pararte</p>
                 <button class="button-info">+ Info</button>
-                
+            </div>
+            <div class="div oculto">
+                <button class="close-button">&times;</button>
+                <img src="assets/carousele.jpg" alt="img oculta" class="img" loading="lazy">
+                <div class="texto oculto">
+                <p class="p">Texto oculto en la primera sección.</p>
+            </div>
             </div>
         </section>
+    </main>
 
-
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="cerrarModal()">&times;</span>
+            <div id="modal-imagen"></div>
+            <div id="modal-texto"></div>
+        </div>
+    </div>
 </body>
 </html>

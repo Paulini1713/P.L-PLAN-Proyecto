@@ -69,7 +69,21 @@ document.querySelector('.next').addEventListener('click', () => cambiarSlide(1))
 
 
 
+const boton = document.querySelectorAll('.li-botones')
+const parrafo = document.querySelectorAll('.parrafo-p')
+console.log(boton , parrafo)
 
+boton.forEach(( _ , i)=>{
+    boton[i].addEventListener(`click` , ()=>{
+        boton.forEach(( _ , i)=>{
+            boton[i].classList.remove('isVisible')
+            parrafo[i].classList.remove('isVisible')
+        })
+
+            boton[i].classList.add('isVisible')
+            parrafo[i].classList.add('isVisible')
+    })
+})
 
 
 
