@@ -189,6 +189,7 @@ p{
     width: 100%;
     height: auto;
     margin: .625rem auto;
+
     position: relative;
 }
 @media (max-width: 900px){
