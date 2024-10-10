@@ -151,7 +151,7 @@ a{
 }
 .column{
     width: 100%;
-    background-color: rgb(236, 159, 255);
+    border: .375rem solid rgb(236, 159, 255);
 
     display: flex;
     flex-flow: column nowrap;
@@ -171,14 +171,17 @@ a{
     }
 }
 .chica{
-    width: 50%;
+    width: 33.33%;
     margin: .625rem;
 }
 .chico{
-    width: 50%;
+    width: 33.33%;
     margin: .625rem;
 }
-
+.hombre{
+    width: 33.33%;
+    margin: .625rem;
+}
 .div-cuerpo{
     width: 50%;
     height: auto;
@@ -191,7 +194,6 @@ a{
     overflow: hidden;
     position: relative;
 }
-
 
 .img{
     width: 100%;
@@ -216,7 +218,7 @@ a{
     transition: opacity 0.5s ease-in-out, visibility 0s;
 }
 .texto{
-    width: 50%;
+    width: 75%;
     /*min-height: 400px;*/
     /*background-color: bisque;*/
     padding: .625rem;
@@ -228,7 +230,7 @@ a{
 }
 
 .h2{
-    padding: 1.25rem;
+    padding: .625rem;
     margin: .625rem auto 1.25rem;
 }
 .caso{
@@ -250,15 +252,15 @@ a{
 }
 .div-texto{
 }
-.p{
+p{
     width: 100%;
 
-    /*background-color: blue;*/
-    padding: 1.25rem;
-    margin: .625rem;
+    background-color: rgb(236, 159, 255);
+    margin: .3125rem;
 
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
