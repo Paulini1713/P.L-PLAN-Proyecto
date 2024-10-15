@@ -10,10 +10,6 @@ headerButton.addEventListener(`click` , function(){
 })
 
 
-
-
-
-
 //let index = 0;
 
 //function mostrarSlide(n) {
@@ -35,9 +31,6 @@ headerButton.addEventListener(`click` , function(){
 
 // Mostrar el primer slide al cargar
 //mostrarSlide(index);
-
-
-
 
 
 //'use strict';
@@ -69,27 +62,27 @@ function mostrarSlide(n) {
     });
 }
 
-// Cambiar al siguiente slide
+    // Cambiar al siguiente slide
 function cambiarSlide(n) {
     mostrarSlide(index + n);
 }
 
-// Mostrar el primer slide al cargar
+    // Mostrar el primer slide al cargar
 mostrarSlide(index);
 
 // Botones de navegación
-document.querySelector('.prev').addEventListener('click', () => cambiarSlide(-1));
-document.querySelector('.next').addEventListener('click', () => cambiarSlide(1));
-
+document.querySelector('.prev').addEventListener( 'click' , () => cambiarSlide(-1));
+document.querySelector('.next').addEventListener('click' , () => cambiarSlide(1));
 
 
 const boton = document.querySelectorAll('.li-botones')
 const parrafo = document.querySelectorAll('.parrafo-p')
-console.log(boton , parrafo)
+console.log( boton , parrafo )
 
 boton.forEach(( _ , i)=>{
     boton[i].addEventListener(`click` , ()=>{
         boton.forEach(( _ , i)=>{
+
             boton[i].classList.remove('isVisible')
             parrafo[i].classList.remove('isVisible')
         })
