@@ -183,7 +183,7 @@ a{
         display: none;
     }
 }
-.h3-formulario{
+.h2-formulario{
     margin: 1.25rem auto 1.25rem;
     font-size: larger;
     text-align: center;
@@ -225,10 +225,70 @@ a{
     font-weight: 600;
     font-size: medium;
 }
+.section-rrss {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.div-rrss {
+    width: 100%; 
+    text-align: center;
+}
+.h3-rrss {
+    margin: 1.25rem
+
+}
+
+.rrss {
+    width: 100%; 
+    display: flex; 
+    flex-flow: row;
+    justify-content: center; 
+    align-items: center;
+}
+.tiktok, .instagram {
+    width: 50%; 
+    display: flex;
+    flex-flow: row; 
+    justify-content: center; 
+    align-items: center;
+}
+.tiktok img, .instagram img {
+    max-width: 100%; 
+    height: auto; 
+    transition: transform 0.2s ease;
+}
+.tiktok:hover{
+    transform: scale(1.3) translateX(45%);
+}
+.instagram:hover{
+    transform: scale(1.3) translateX(-45%);
+}
+@media (max-width: 1200px){
+    .rrss{
+        flex-flow: column;
+        width: 100%;
+    }
+}
+@media (max-width:)
+.p-rrss {
+    margin-top: 1rem; /
+    text-align: center; 
+    font-weight: 600;
+    font-size: 4vh;
+}
 .footer-rrss{
     width: 100%;
     min-height: 3.125rem;
     height: auto;
+    background-color: blueviolet;
 
     display: flex;
     flex-flow: row;
@@ -236,7 +296,5 @@ a{
     align-items: center;
 
     gap: 1.25rem;
-}
-.instagram-cuenta{
-    height: auto;
+    margin-top: 1.25rem;
 }
