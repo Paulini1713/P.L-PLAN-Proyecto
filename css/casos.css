@@ -43,6 +43,11 @@ button{
 button:hover{
     background-color: rgb(226, 43, 226);
 }
+a{
+    color: black;
+    text-decoration: none;
+    z-index: 1;
+}
 .header{
     width: 100%;
     background-color: blueviolet;
@@ -65,7 +70,21 @@ button:hover{
     /*width: 95%;*/
     min-height: 2.5rem;
 }
-.nav .isVisible{}
+.nav .isVisible{
+    height: auto;
+    background-color: blueviolet; 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    position: absolute;
+    top: 12%; /* Asegura que el menú aparezca justo debajo del header */ 
+    z-index: 1;
+    border-radius: 20%;
+    text-align: center;
+}
 .ul-nav{
     display: flex;
     flex-flow: row nowrap;
@@ -88,11 +107,6 @@ button:hover{
 }
 .li-nav:hover{
     color: white;
-}
-a{
-    color: black;
-    text-decoration: none;
-    z-index: 1;
 }
 .header-button{
     display: none;
@@ -212,7 +226,7 @@ a{
 .img:first-child{
     position: static;
 }
-.img.isVisible{
+.img.isActive{
     opacity: 1;
     visibility: visible;
     transition: opacity 0.5s ease-in-out, visibility 0s;

@@ -1,5 +1,17 @@
 'use strict'
 
+let headerButton = document.querySelector('.header-button')
+let ulNav = document.querySelector('.ul-nav')
+console.log( headerButton )
+console.log ( ulNav)
+
+headerButton.addEventListener(`click` , function(){
+    ulNav.classList.toggle(`isVisible`)
+})
+
+
+
+
 document.addEventListener("DOMContentLoaded", function() {
     const carruseles = document.querySelectorAll('.div-cuerpo');
     
@@ -10,9 +22,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
         function showImage(index) {
             imagenes.forEach((img, i) => {
-                img.classList.remove('isVisible');
+                img.classList.remove('isActive');
                 if (i === index) {
-                    img.classList.add('isVisible');
+                    img.classList.add('isActive');
                 }
             });
         }
