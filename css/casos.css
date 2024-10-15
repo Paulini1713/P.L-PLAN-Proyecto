@@ -120,6 +120,7 @@ a{
 @media (max-width: 54.6875rem){
     .header-button{
         display: block;
+        position: relative;
     }
     .ul-nav{
         display: none;
