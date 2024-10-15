@@ -264,6 +264,7 @@ a{
     max-width: 100%; 
     height: auto; 
     transition: transform 0.2s ease;
+    padding: .3125rem;
 }
 .tiktok:hover{
     transform: scale(1.3) translateX(45%);
@@ -277,12 +278,16 @@ a{
         width: 100%;
     }
 }
-@media (max-width:)
+@media (max-width: 950px){
+    .rrss{
+        display: none;
+    }
+}
 .p-rrss {
-    margin-top: 1rem; /
-    text-align: center; 
+    margin-top: 1rem; 
+    text-align: center;
     font-weight: 600;
-    font-size: 4vh;
+    font-size: 3vw;
 }
 .footer-rrss{
     width: 100%;
