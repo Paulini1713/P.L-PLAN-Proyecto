@@ -45,6 +45,9 @@ a{
     text-decoration: none;
     z-index: 1;
 }
+p{
+    font-size: 1vw;
+}
 .header{
     width: 100%;
     background-color: blueviolet;
@@ -172,18 +175,18 @@ a{
     width: 100%;
 
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: center;
     align-items: center;
 
 }
 .h2-jp{
-    margin: 1.25rem auto 1.25rem;
+    margin: 1.25rem auto 2.5rem;
     text-align: center;
 }
 .div-nosotros{
       width: 100%;
-      max-width: 900px;
+      max-width: 1000px;
     
       position: relative;
       overflow: hidden;
@@ -201,11 +204,11 @@ a{
     position: relative;
 }
 .div-item {
-    height: auto;
-    flex: 0 0 25%; /* Cada imagen ocupa un cuarto del ancho visible */
+    height: 31.25rem;
+    flex: 0 0 21%; /* Cada imagen ocupa un cuarto del ancho visible */
     text-align: center;
     transition: transform 0.5s ease;
-    opacity: 0.9; /* Hacer que las imágenes laterales tengan menor opacidad */
+    opacity: 0.5; /* Hacer que las imágenes laterales tengan menor opacidad */
     margin: .625rem;
     background-size: contain;
 
@@ -213,12 +216,18 @@ a{
     position: relative;
     overflow: hidden;
 }
+@media (max-width: 1000px){
+    .div-item{
+        flex: 0 0 20%;
+    }
+}
 .div-item.active {
     transform: scale(1.2); 
-    opacity: 1; 
+    opacity: 1;
 }
 .div-item img{
     width: 100%;
+    height: auto;
     border-radius: .625rem .625rem 0 0;
 }
 .prev, .next {
@@ -257,7 +266,7 @@ a{
     overflow: hidden;
 } 
 .h2-juntos{
-    margin: 1.25rem auto .625rem;
+    margin: 1.25rem auto 1.875rem;
 }
 .div-juntos{
     display: flex;

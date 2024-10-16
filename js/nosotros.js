@@ -34,76 +34,78 @@ headerButton.addEventListener(`click` , function(){
 
 
 // Función para el carrusel de Paula
-let indexPaula = 0;
+let Paula = 0;
 
 function mostrarSlidePaula(n) {
-    const slidesPaula = document.querySelectorAll('.div-ella .div-item');
+    const slidesPaula = document.querySelectorAll( '.div-ella .div-item' );
     if (n >= slidesPaula.length) {
-        
-        indexPaula = 0;
+
+        Paula = 0;
     } else if (n < 0) {
-        indexPaula = slidesPaula.length - 1;
-    } else {
-        indexPaula = n;
+        Paula = slidesPaula.length - 1;
+    } else{
+        Paula = n;
     }
 
     // Resaltar imagen activa
-    slidesPaula.forEach((slide, i) => {
+    slidesPaula.forEach(( slide, i ) => {
         slide.classList.remove('active');
-        if (i === indexPaula) {
-            slide.classList.add('active'); // Hacer la imagen activa más grande
+        if (i === Paula) {
+            slide.classList.add( 'active' ); 
         }
     });
 }
 
 function cambiarSlidePaula(n) {
-    mostrarSlidePaula(indexPaula + n);
+    mostrarSlidePaula(Paula + n);
 }
 
 // Iniciar el primer slide de Paula
-mostrarSlidePaula(indexPaula);
+mostrarSlidePaula(Paula);
 
-// Botones navegación para Paula
+// Botones navegación Paula
 document.querySelector('.section-nosotros .prev').addEventListener('click', () => cambiarSlidePaula(-1));
 document.querySelector('.section-nosotros .next').addEventListener('click', () => cambiarSlidePaula(1));
 
-// Función para el carrusel de Mi Historia
-let indexHistoria = 0;
+// Carrusel de Mi Historia
+let Historia = 0;
 
 function mostrarSlideHistoria(n) {
     const slidesHistoria = document.querySelectorAll('.div-juntos .div-item');
     if (n >= slidesHistoria.length) {
 
-        indexHistoria = 0;
+        Historia = 0;
     } else if (n < 0) {
-        indexHistoria = slidesHistoria.length - 1;
+        Historia = slidesHistoria.length - 1;
     } else {
-        indexHistoria = n;
+        Historia = n;
     }
 
     // Resaltar la imagen activa
 
-    slidesHistoria.forEach((slide, i) => {
+    slidesHistoria.forEach(( slide, i ) => {
         slide.classList.remove('active');
-        if (i === indexHistoria) {
+        if (i === Historia) {
+
             slide.classList.add('active'); 
         }
     });
 }
 
 function cambiarSlideHistoria(n) {
-    mostrarSlideHistoria(indexHistoria + n);
+    mostrarSlideHistoria(Historia + n);
 }
 
-// Iniciar primer slide de Mi Historia
-mostrarSlideHistoria(indexHistoria);
+// Iniciar primer slide de Historia
+mostrarSlideHistoria(Historia);
 
-// Botones navegación Mi Historia
-document.querySelector('.section-juntos .prev').addEventListener('click', () => cambiarSlideHistoria(-1));
-document.querySelector('.section-juntos .next').addEventListener('click', () => cambiarSlideHistoria(1));
+// Botones navegación Historia
+document.querySelector('.section-juntos .prev').addEventListener( 'click' , () => cambiarSlideHistoria(-1));
+document.querySelector('.section-juntos .next').addEventListener( 'click' , () => cambiarSlideHistoria(1));
 
 
 // Botones de navegación
+
 document.querySelector('.prev').addEventListener( 'click' , () => cambiarSlide(-1));
 document.querySelector('.next').addEventListener('click' , () => cambiarSlide(1));
 
@@ -112,9 +114,10 @@ const boton = document.querySelectorAll('.li-botones')
 const parrafo = document.querySelectorAll('.parrafo-p')
 console.log( boton , parrafo )
 
-boton.forEach(( _ , i)=>{
+boton.forEach((  _  ,  i )=>{
+
     boton[i].addEventListener(`click` , ()=>{
-        boton.forEach(( _ , i)=>{
+        boton.forEach((  _  ,  i )=>{
 
             boton[i].classList.remove('isVisible')
             parrafo[i].classList.remove('isVisible')
