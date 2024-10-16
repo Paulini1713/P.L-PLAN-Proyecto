@@ -44,9 +44,7 @@ a{
     text-decoration: none;
     z-index: 1;
 }
-a:hover{
-    background-color: rgb(226, 43, 226);
-}
+
 .header{
     width: 100%;
     background-color: blueviolet;
@@ -226,6 +224,7 @@ a:hover{
 }
 .h3-planes{
     margin: 1.25rem auto 1.25rem;
+    font-size: 3vw;
 }
 .div-planes{
     width: 100%;

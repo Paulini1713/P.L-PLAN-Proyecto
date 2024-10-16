@@ -260,8 +260,6 @@ p{
     font-size: xx-large;
 }
 .p{
-    width: 50%;
-
     /*background-color: blue;*/
     padding: 1.25rem;
     margin: .625rem auto 1.25rem;
@@ -270,6 +268,11 @@ p{
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
+}
+@media (max-width: 770px){
+    .p{
+        font-size: 4vw;
+    }
 }
 .h3{
     padding: 1.25rem;

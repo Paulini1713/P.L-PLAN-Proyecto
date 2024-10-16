@@ -33,42 +33,75 @@ headerButton.addEventListener(`click` , function(){
 //mostrarSlide(index);
 
 
-//'use strict';
+// Función para el carrusel de Paula
+let indexPaula = 0;
 
-let index = 0;
-
-function mostrarSlide(n) {
-    const slides = document.querySelectorAll('.div-item');
-    
-     //Limitar el índice para que no se salga del rango
-    if (n >= slides.length) {
-        index = 0;
+function mostrarSlidePaula(n) {
+    const slidesPaula = document.querySelectorAll('.div-ella .div-item');
+    if (n >= slidesPaula.length) {
+        
+        indexPaula = 0;
     } else if (n < 0) {
-        index = slides.length - 1;
+        indexPaula = slidesPaula.length - 1;
     } else {
-        index = n;
+        indexPaula = n;
     }
 
-    // Desplazamiento para centrar la imagen
-    const offset = -index * 25; // Moverse un tercio por cada imagen
-   // document.querySelector('.div-ella').style.transform = `translateX(${offset}%)`;
-
-    // Resaltar la imagen central (imagen activa)
-    slides.forEach((slide, i) => {
+    // Resaltar imagen activa
+    slidesPaula.forEach((slide, i) => {
         slide.classList.remove('active');
-       if (i === index) {
-            slide.classList.add('active'); // Hacer la imagen central más grande
+        if (i === indexPaula) {
+            slide.classList.add('active'); // Hacer la imagen activa más grande
         }
     });
 }
 
-    // Cambiar al siguiente slide
-function cambiarSlide(n) {
-    mostrarSlide(index + n);
+function cambiarSlidePaula(n) {
+    mostrarSlidePaula(indexPaula + n);
 }
 
-    // Mostrar el primer slide al cargar
-mostrarSlide(index);
+// Iniciar el primer slide de Paula
+mostrarSlidePaula(indexPaula);
+
+// Botones navegación para Paula
+document.querySelector('.section-nosotros .prev').addEventListener('click', () => cambiarSlidePaula(-1));
+document.querySelector('.section-nosotros .next').addEventListener('click', () => cambiarSlidePaula(1));
+
+// Función para el carrusel de Mi Historia
+let indexHistoria = 0;
+
+function mostrarSlideHistoria(n) {
+    const slidesHistoria = document.querySelectorAll('.div-juntos .div-item');
+    if (n >= slidesHistoria.length) {
+
+        indexHistoria = 0;
+    } else if (n < 0) {
+        indexHistoria = slidesHistoria.length - 1;
+    } else {
+        indexHistoria = n;
+    }
+
+    // Resaltar la imagen activa
+
+    slidesHistoria.forEach((slide, i) => {
+        slide.classList.remove('active');
+        if (i === indexHistoria) {
+            slide.classList.add('active'); 
+        }
+    });
+}
+
+function cambiarSlideHistoria(n) {
+    mostrarSlideHistoria(indexHistoria + n);
+}
+
+// Iniciar primer slide de Mi Historia
+mostrarSlideHistoria(indexHistoria);
+
+// Botones navegación Mi Historia
+document.querySelector('.section-juntos .prev').addEventListener('click', () => cambiarSlideHistoria(-1));
+document.querySelector('.section-juntos .next').addEventListener('click', () => cambiarSlideHistoria(1));
+
 
 // Botones de navegación
 document.querySelector('.prev').addEventListener( 'click' , () => cambiarSlide(-1));
@@ -91,7 +124,4 @@ boton.forEach(( _ , i)=>{
             parrafo[i].classList.add('isVisible')
     })
 })
-
-
-
 

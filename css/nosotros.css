@@ -192,11 +192,14 @@ a{
 .div-ella {
     width: 100%;
     height: auto;
+
     display: flex;
+    flex-flow: row;
     justify-content: center;
     align-items: center;
     transition: transform 0.5s ease;
     
+    position: relative;
 }
 .div-item {
     height: auto;
@@ -284,6 +287,11 @@ a{
     border-radius: 10%;
 
     padding: 1.875rem;
+}
+@media (max-width: 600px){
+    .botones{
+        width: 100%;
+    }
 }
 .ul-botones{
     display: flex;
