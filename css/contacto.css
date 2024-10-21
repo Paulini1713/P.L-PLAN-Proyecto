@@ -1,3 +1,9 @@
+/*
+Reset
+Variables
+Header
+Main
+Footer*/
 *{
     margin: 0;
     padding: 0;
@@ -6,24 +12,29 @@
 }
 
 html{
+/* Uso scroll behavior smooth para un desplazamiento suave en la página*/
     font-size: 100%;
     scroll-behavior: smooth;
 }
 
 body{
+/*Tipo de letra principal monteserrat con una segunda por si no carga la primera*/
     font-size: 100%;
     font-family: "Montserrat", sans-serif;
 }
 
 li{
+/*Quitar los estilos de puntos de las listas*/
     list-style: none;
 }
 
 img{
+/*Ajustar la imagen al contenedor completo*/
     display: block;
 }
 
 button{
+/*Propiedades de los botones*/
     font-size: 1.5em;
     font-weight: bold;
     padding: .625rem 1.875rem;
@@ -35,16 +46,18 @@ button{
 }
 
 button:hover{
+/*Al poner el ratón sobre un botón cambia de color con hover*/
     background-color: rgb(226, 43, 226);
 }
 a{
+/*Todos los enlaces van por encima de todo*/
     color: black;
     text-decoration: none;
     z-index: 1;
 }
 .header{
     width: 100%;
-    background-color: blueviolet;
+    background-color: blueviolet; /*El fondo de la sección se ve de ese color*/
 
     display: flex;
     flex-flow: row nowrap;
@@ -58,13 +71,13 @@ a{
 }
 .img-icono{
     width: 15%;
-    background-size: cover;
+    background-size: cover; /*Se ajusta la imagen al contendor*/
     background-attachment: fixed;
     margin-left: 1.25rem;
 }
 .nav{
     /*width: 95%;*/
-    min-height: 2.5rem;
+    min-height: 2.5rem; /*Altura mínima*/
 }
 .nav .isVisible{
     height: auto;
@@ -76,8 +89,8 @@ a{
     align-items: center;
     
     position: absolute;
-    top: 12%; /* Asegura que el menú aparezca justo debajo del header */ 
-    z-index: 1;
+    top: 12%; /* El menú aparece debajo del header */ 
+    z-index: 1; /*Se coloca por encima*/
     border-radius: 20%;
     text-align: center;
 }
@@ -88,16 +101,16 @@ a{
     align-items: center;
     font-weight: 500;
 
-    padding: .625rem;
+    padding: .625rem; /*Espacio en el contenedor con los que hay en su interior*/
 }
 @media (max-width:54.6875rem){
     .ul-nav{
         display: none;
-        margin: .625rem;
+        margin: .625rem; /*Margen en pantallas más pequeñas*/
     }
 }
 .li-nav{
-    font-size: medium;
+    font-size: medium; /*Tamaño de la letra en el navegador*/
     margin: 0 3.125rem 0;
     font-weight: bold;
 }
@@ -130,7 +143,7 @@ a{
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    align-items: end;
+    align-items: end; /*En el eje secundario se colocan al final*/
     margin: 0 auto .625rem;
     
     position: relative;
@@ -148,7 +161,7 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+    overflow: hidden; /*Lo que sobresale del contendor se oculta*/
 }
 .img-empieza img{
     width: 100%;
@@ -161,8 +174,8 @@ a{
     font-family: "Protest Guerrilla", sans-serif;
     font-weight: 400;
     font-style: normal;
-    text-align: end;
-    margin-right: 6.25rem;
+    text-align: end; /*El texto se coloca al final*/
+    margin-right: 6.25rem; /*Margen derecho en el contenedor*/
 }
 .contacto{
     color: blueviolet;
@@ -173,7 +186,7 @@ a{
     background-color: blueviolet;
 
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr); /*Se repiten dos columnas por fila*/
 }
 .div-formulario{
     padding: 1.25rem;
@@ -185,23 +198,23 @@ a{
 }
 .h2-formulario{
     margin: 1.25rem auto 1.25rem;
-    font-size: larger;
+    font-size: larger; /*Tamaño de la letra*/
     text-align: center;
 }
 .p-formulario{
     font-weight: 500;
     font-size: large;
     text-align: center;
-    letter-spacing: .125rem;
+    letter-spacing: .125rem; /*Espacio entre letras*/
 }
 .formulario{
     margin: auto;
-    width: 60%;
+    width: 60%; /*Ancho de la sección*/
     font-weight: 600;
 }
 @media (max-width: 800px){
     .formulario{
-        width: 100%;
+        width: 100%; /*En pantallas pequeñas cambia el ancho*/
     }
 }
 .carpeta{
@@ -219,7 +232,7 @@ a{
 }
 .button-formulario{
     border-radius: 25%;
-    border: .3125rem solid black;
+    border: .3125rem solid black; /*Grosor del borde y color*/
     padding: 1.25rem;
     margin: auto;
     font-weight: 600;
@@ -263,18 +276,18 @@ a{
 .tiktok img, .instagram img {
     max-width: 100%; 
     height: auto; 
-    transition: transform 0.2s ease;
+    transition: transform 0.2s ease; /*Transiciones de tiempo de las imágenes*/
     padding: .3125rem;
 }
 .tiktok:hover{
-    transform: scale(1.1) translateX(45%);
+    transform: scale(1.1) translateX(45%); /*Al ponerse encima de la imagen cambia su escala y se desplaza hacia la derecha*/
 }
 .instagram:hover{
-    transform: scale(1.1) translateX(-45%);
+    transform: scale(1.1) translateX(-45%); /*Al ponerse encima de la imagen cambia su escala y se desplaza hacia la izquierda*/
 }
 @media (max-width: 1200px){
     .rrss{
-        flex-flow: column;
+        flex-flow: column; /*En pantallas más pequeñas, cambia a columna*/
         width: 100%;
     }
 }
@@ -287,7 +300,7 @@ a{
     margin-top: 1rem; 
     text-align: center;
     font-weight: 600;
-    font-size: 3vw;
+    font-size: 3vw; /*Tamaño de la letra según el ancho de la página*/
 }
 .footer-rrss{
     width: 100%;
@@ -300,6 +313,6 @@ a{
     justify-content: center;
     align-items: center;
 
-    gap: 1.25rem;
+    gap: 1.25rem; /*Espacio entre las filas del contenedor*/
     margin-top: 1.25rem;
 }

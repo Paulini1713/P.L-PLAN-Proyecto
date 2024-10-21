@@ -1,3 +1,9 @@
+/*
+Reset
+Variables
+Header
+Main
+Footer*/
 *{
     margin: 0;
     padding: 0;
@@ -6,20 +12,24 @@
 }
 
 html{
+/* Uso scroll behavior smooth para un desplazamiento suave en la página*/
     font-size: 100%;
     scroll-behavior: smooth;
 }
 
 body{
+/*Tipo de letra principal monteserrat con una segunda por si no carga la primera*/
     font-size: 100%;
     font-family: "Montserrat", sans-serif;
 }
 
 li{
+/*Quitar los estilos de puntos de las listas*/
     list-style: none;
 }
 
 img{
+/*Ajustar la imagen al contenedor completo*/
     display: block;
     max-width: 100%; 
     height: auto; 
@@ -27,6 +37,7 @@ img{
 }
 
 button{
+/*Propiedades de los botones*/
     font-size: 1.5em;
     font-weight: bold;
     padding: .625rem 1.875rem;
@@ -41,12 +52,26 @@ button{
 }
 
 button:hover{
+/*Al poner el ratón sobre un botón cambia de color con hover*/
     background-color: rgb(226, 43, 226);
 }
 a{
+/*Todos los enlaces van por encima de todo*/
     color: black;
     text-decoration: none;
     z-index: 1;
+}
+p{
+    width: 100%;
+
+    background-color: rgb(236, 159, 255);
+    margin: .3125rem;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 .header{
     width: 100%;
@@ -61,10 +86,10 @@ a{
 }
 .div-icono{}
 .img-icono{
-    width: 15%;
-    background-size: cover;
+    width: 15%; /*Ancho se la sección*/
+    background-size: cover; /*Se ajusta la imagen al contenedor*/
     background-attachment: fixed;
-    margin-left: 1.25rem;
+    margin-left: 1.25rem; /*Margen izquierdo en el contenedor*/
 }
 .nav{
     /*width: 95%;*/
@@ -80,9 +105,9 @@ a{
     align-items: center;
     
     position: absolute;
-    top: 12%; /* Asegura que el menú aparezca justo debajo del header */ 
-    z-index: 1;
-    border-radius: 20%;
+    top: 12%; /* El menú aparece debajo del header */ 
+    z-index: 1; /*Se coloca por encima de todo*/
+    border-radius: 20%; /*Borde más redondo*/
     text-align: center;
 }
 .ul-nav{
@@ -101,25 +126,25 @@ a{
     }
 }
 .li-nav{
-    font-size: medium;
+    font-size: medium; /*Tamaño de la letra*/
     margin: 0 3.125rem 0;
     font-weight: bold;
 }
 .li-nav:hover{
-    color: white;
+    color: white; /*Al ponerse encima se cambia de color la letra*/
 }
 .header-button{
     display: none;
 }
 .header-svg{
-    width: 2rem;
+    width: 2rem; /*Tamaño del icono en el navegador*/
     min-height: 2rem;
     display: block;
 }
 
 @media (max-width: 54.6875rem){
     .header-button{
-        display: block;
+        display: block; /*En pantallas pequeñas aparece el icono*/
         position: relative;
     }
     .ul-nav{
@@ -143,7 +168,7 @@ a{
 .h1{
     margin: auto;
     color: white;
-    font-size: 10vw;
+    font-size: 10vw; /*Tamaño de la letra dependiendo del ancho*/
     font-family: "Protest Guerrilla", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -153,7 +178,7 @@ a{
     color: blueviolet;
 }
 .exito{
-    color: blueviolet;
+    color: blueviolet; /*Color de la letra*/
     display: flex;
     flex-flow: row;
     justify-content: space-between;
@@ -169,11 +194,11 @@ a{
     border: .375rem solid rgb(236, 159, 255);
 
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: column nowrap; /*Se coloca en columnas*/
     justify-content: space-between;
     align-items: center;
     
-    margin: .625rem auto .625rem;
+    margin: .625rem auto .625rem; 
     padding: .625rem;
 }
 @media (max-width: 56.25rem) {
@@ -186,15 +211,15 @@ a{
     }
 }
 .chica{
-    width: 33.33%;
+    width: 33.33%; /*Ancho de la sección*/
     margin: .625rem;
 }
 .chico{
-    width: 33.33%;
+    width: 33.33%; /*Ancho de la sección*/
     margin: .625rem;
 }
 .hombre{
-    width: 33.33%;
+    width: 33.33%; /*Ancho de la sección*/
     margin: .625rem;
 }
 .div-cuerpo{
@@ -206,31 +231,33 @@ a{
     flex-flow: row;
     justify-content: center;
     align-items: center;
+
     overflow: hidden;
-    position: relative;
+    position: relative; /*Contenedor relativo y la hija abslouta*/
 }
 
 .img{
     width: 100%;
-    max-height: 600px;
+    max-height: 600px; /*Altura máxima de la página*/
+
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center; 
-    object-fit: cover;
+    object-fit: cover; /*La imagen se adapata al contendor*/
 
     position: absolute;
-    opacity: 0; 
+    opacity: 0; /*No se ve*/
     top: 0; 
     left: 0;
-    visibility: hidden;
+    visibility: hidden; /*La visibilidad es oculta*/
 }
 .img:first-child{
     position: static;
 }
 .img.isActive{
     opacity: 1;
-    visibility: visible;
-    transition: opacity 0.5s ease-in-out, visibility 0s;
+    visibility: visible; /*Se hace visible la imagen*/
+    transition: opacity 0.5s ease-in-out, visibility 0s; /*Transición con la opacidad y la visibilidad en el cambio de imagen*/
 }
 .texto{
     width: 75%;
@@ -254,12 +281,12 @@ a{
     justify-content: space-between;
     align-items: center;
 }
-@media (max-width: 48rem) {
+@media (max-width: 770px) {
     .div-cuerpo {
         width: 100%;
     }
     .texto {
-        width: 90%;
+        width: 90%; /*Ancho en pantallas más pequeñas*/
     }
     .p {
         width: 100%;
@@ -267,24 +294,13 @@ a{
 }
 .div-texto{
 }
-p{
-    width: 100%;
 
-    background-color: rgb(236, 159, 255);
-    margin: .3125rem;
-
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
 .footer{
     height: auto;
     margin: 1.25rem auto 1.25rem;
 }
 .div-footer{
-    height: auto;
+    height: auto; /*Altura automática*/
 }
 .h3-footer{
     text-align: center;

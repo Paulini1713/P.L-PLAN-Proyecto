@@ -1,3 +1,9 @@
+/*
+Reset
+Variables
+Header
+Main
+Footer*/
 *{
     margin: 0;
     padding: 0;
@@ -6,25 +12,30 @@
 }
 
 html{
+/* Uso scroll behavior smooth para un desplazamiento suave en la página*/
     font-size: 100%;
     scroll-behavior: smooth;
 }
 
 body{
+/*Tipo de letra principal monteserrat con una segunda por si no carga la primera*/
     font-size: 100%;
     font-family: "Montserrat", sans-serif;
 }
 
 li{
+/*Quitar los estilos de puntos de las listas*/
     list-style: none;
 }
 
 img{
+/*Ajustar la imagen al contenedor completo*/
     display: block;
     height: auto;
 }
 
 button{
+/*Propiedades de los botones*/
     font-size: 1.5em;
     font-weight: bold;
     padding: .625rem 1.875rem;
@@ -36,9 +47,11 @@ button{
 }
 
 button:hover{
+/*Al poner el ratón sobre un botón cambia de color con hover*/
     background-color: rgb(226, 43, 226);
 }
 a{
+/*Todos los enlaces van por encima de todo*/
     color: black;
     text-decoration: none;
     z-index: 1;
@@ -79,7 +92,7 @@ p{
     
     position: absolute;
     top: 12%; /* Asegura que el menú aparezca justo debajo del header */ 
-    z-index: 1;
+    z-index: 1; /*Se coloca por encima de todo*/
     border-radius: 20%;
     text-align: center;
 }
@@ -107,12 +120,12 @@ p{
     color: white;
 }
 .header-button{
-    display: none;
+    display: none; /*No se ve en la pantalla*/
 }
 .header-svg{
     width: 2rem;
     min-height: 2rem;
-    display: block;
+    display: block; /*Se coloca en forma de cajas*/
 }
 @media (max-width: 880px){
     .header-button{
@@ -127,28 +140,28 @@ p{
 }
 .div {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
 }
 
 .img {
-    max-width: 100%;
+    max-width: 100%; 
     border-radius: .625rem;
 }
 .div-img{
-    min-height: 85vh;
+    min-height: 85vh; /*La altura depende de la pantalla*/
     
     text-align: center;
     
-    background-image: url('../assets/planescentral.jpg');
+    background-image: url('../assets/planescentral.jpg'); /*Imagen de fondo*/
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
 .h1-plan{
     margin: auto;
-    color: white;
+    color: white; /*Color de la letra*/
     font-size: 15vh;
     font-family: "Protest Guerrilla", sans-serif;
     font-weight: 400;
@@ -156,7 +169,7 @@ p{
 }
 @media ( max-width: 1300px){
     .h1-plan{
-         font-size: 10vh;
+         font-size: 10vh; /*El tamaño de la letra depende del tamaño de la pantalla*/
     }
 }
 @media ( max-width: 820px){
@@ -173,7 +186,7 @@ p{
     padding: 1.25rem;
     margin: 1.25rem 0;
     box-shadow: 0 .125rem .625rem rgba(0, 0, 0, 0.1);
-    position: relative;
+    position: relative; /*Relativo el contenedor para que su hija sea absoluta por encima*/
 }
 .main .section{
     width: 100%;
@@ -182,19 +195,19 @@ p{
     background-color: rgb(236, 159, 255);
 
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
+    flex-flow: row nowrap; /*Se coloca en fila */
+    justify-content: space-between; /*En el eje principal se coloca con espacio*/
+    align-items: center; /*En el eje secundario se coloca en el centro*/
     margin: .625rem auto .625rem;
     padding: .625rem;
 }
 @media (max-width: 1320px){
     .main .section{
-        flex-direction: column;
+        flex-direction: column; /*En pantallas más pequeñas se coloca en columna*/
     }
 }
 .main .section .div{
-    width: 50%;
+    width: 50%; /*Ancho máximo de la sección*/
     min-height: 25rem;
     background-color: black;
 }
@@ -219,10 +232,10 @@ p{
 
 .img {
     max-width: 100%;
-    border-radius: 10px;
+    border-radius: .625rem; 
 }
 .img:hover{
-    transform: scale(1.1);
+    transform: scale(1.1); /*Al poner el ratón encima de la imagen se agranda una escala*/
 }
 .close:hover{
     transform: none;
@@ -232,8 +245,8 @@ p{
     position: absolute; 
     top: 50%; /* Centrado verticalmente */
     left: 50%; /* Centrado horizontalmente */
-    transform: translate(-50%, -50%); /* Ajustamos el origen al centro */
-    z-index: 1; 
+    transform: translate(-50%, -50%); /* Ajustoel origen al centro */
+    z-index: 1; /*Se coloca por encima*/
     background-color: rgba(255, 255, 255, 0.9); /* Fondo semi-transparente */
     padding: .625rem; 
     border-radius: .125rem; 
@@ -247,7 +260,7 @@ p{
 
     display: flex;
     flex-flow: column nowrap;
-    justify-content: start;
+    justify-content: start; /*Se coloca al principio en el eje principal*/
     align-items: center;
 
     text-align: center;
@@ -257,7 +270,7 @@ p{
 .h2{
     padding: .625rem;
     margin: .625rem auto .625rem;
-    font-size: xx-large;
+    font-size: xx-large; /*Tamaño de la letra*/
 }
 .p{
     /*background-color: blue;*/
@@ -284,6 +297,8 @@ p{
     background-color: white;
     display: flex;
     flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
 }
 
 @media (max-width: 1320px){
@@ -296,11 +311,11 @@ p{
     height: 100%; 
 
     display: none; 
-    position: fixed; 
-    z-index: 1; 
-    left: 0;
+    position: fixed; /*Se queda fijo en la página*/
+    z-index: 1;  /*Se coloca por encima*/
+    left: 0; 
     top: 0;
-    overflow: auto; 
+    overflow: auto; /*Se pone en automático si sobrepasa el tamaño del contenedor*/
     background-color: rgb(0,0,0); 
     
 }   
@@ -310,14 +325,14 @@ p{
     background-color: #ffffff00;
     margin: 1.875rem auto; 
     
-    border: .0625rem solid #ffffff;
+    border: .0625rem solid #ffffff; /*Tipo y color de borde*/
     text-align: center;
 }
 
 .close {
     color: #ffffff00;
-    float: right;
-    font-size: 1.75rem;
+    float: right; /*Se mueve a la derecha del contenedor*/
+    font-size: 1.75rem; 
     font-weight: bold;
     border: .3125rem solid rgb(236, 159, 255);
 }
@@ -326,7 +341,7 @@ p{
 }
 .close:focus {
     color: black;
-    cursor: pointer;
+    cursor: pointer; /*Tipo de ratón al ponerlo encima*/
 }
 .footer{
     height: auto;
@@ -337,7 +352,7 @@ p{
 }
 .h3-footer{
     text-align: center;
-    letter-spacing: .125rem;
+    letter-spacing: .125rem; /*Espacio entre letras*/
 }
 .svg-footer{
     margin: 0 .625rem 0;
