@@ -24,12 +24,14 @@
     <header class="header">
         <div class="div-icono">
             <a href="index.html">
+                <!--Se usa un alt por si no carga la página se vea ese texto-->
                 <img src="assets/JPPLANICONO.png" alt="P.LPLANICONO" class="img-icono">
             </a>
         </div>
         <nav class="nav isVisible">
             <ul class="ul-nav">
                 <li class="li-nav">
+                <!--Se pone # para poder deslizarse en la misma página hacia esa zona-->
                     <a href="#+info">Planes</a></li>
                 <li class="li-nav">
                     <a href="#Empieza">Casos de éxito</a></li>
@@ -131,7 +133,7 @@
                 <h2 class="h2-nosotros" id="Conóceme">Más sobre mi</h2>
                 <p class="p-nosotros">Yo no empecé sabiendo, ni estando en forma. Me llevó un proceso de mucho tiempo. <br> ¿Quieres saber cómo llegué hasta donde estoy y en forma? <br> ¡Te invito a conocer mi proceso!
                 </p>
-                <!--Target se usa con blank para optimizar el enlace-->
+                <!--Target se usa con blank para abrir el enlace en otra página-->
                 <a href="nosotros.html" class="a-nosotros" target="_blank">Conóceme</a>
             </div>
             <div class="div-caras">
@@ -155,7 +157,8 @@
                 <input type="text" class="carpeta">
                 <p>Mensaje:</p>
                 <textarea class="mensaje"></textarea>
-                <p><input type="button" class="button-formulario" value="Enviar"></p>
+                <!--Se usa required para hacer obligatorio que se rellene ese espacio para enviar el formulario-->
+                <p><input type="button" class="button-formulario" value="Enviar" required></p>
             </form>
 
         </article>
@@ -177,6 +180,7 @@
             <!--Enlaces sobre las redes sociales-->
                 <li class="li-sobre">
                     <a href="mailto: reallifechange23@gmail.com">Correo electrónico
+                        <!--Uso distintos svg para cada enlace por reconocerlos-->
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
                             <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
                           </svg>
