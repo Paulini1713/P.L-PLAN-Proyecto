@@ -153,6 +153,7 @@ p{
 }
 .main{
     width: 100%;
+    height: auto;
 }
 .div-img{
     min-height: 85vh;
@@ -294,6 +295,33 @@ p{
 }
 .div-texto{
 }
+
+.section-botones{
+    width: 100%;
+    min-height: 10rem;
+   
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+}
+.botones{
+    width: 100%;
+    min-height: 4rem;
+    
+
+    display: grid;
+    grid-template-columns: repeat(1 , 1fr);
+    gap:.5rem;
+}
+.boton{
+    margin-left: 2.5rem;
+    
+}
+.opcion{
+    height: auto;
+    text-align: center;
+}
+.opcion.isActive{}
 
 .footer{
     height: auto;
