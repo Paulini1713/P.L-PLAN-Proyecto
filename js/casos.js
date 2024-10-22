@@ -39,3 +39,14 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+
+    //Animaciones botones
+    let boton1 = document.querySelector('.boton1')
+    console.log( boton1 )
+    
+    let opcion1 = document.querySelector('.opcion1')
+    console.log( opcion1 )
+    
+    boton1.addEventListener(`click` , function(){
+        opcion1.classList.toggle(`isActive`) 
+    } )
