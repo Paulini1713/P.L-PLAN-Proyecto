@@ -308,6 +308,14 @@ p{
 
     margin-top: 1.25rem;
 }
+@media (max-width: 1130px){
+    .section-botones{
+        flex-direction: row;
+    }
+    .opcion{
+        margin-top: 3.75rem;
+    }
+}
 .botones{
     width: 100%;
     min-height: 4rem;
@@ -315,6 +323,16 @@ p{
 
     display: grid;
     grid-template-columns: repeat(1 , 1fr);
+}
+@media (max-width:1450px){
+    .botones{
+        font-size: 1vh;
+    }
+}
+@media (max-width: 750px){
+    .botones{
+        
+    }
 }
 .boton{
     margin-left: 2.5rem;
