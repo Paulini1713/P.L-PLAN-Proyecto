@@ -297,21 +297,24 @@ p{
 }
 
 .section-botones{
-    width: 100%;
+    width: 80%;
     min-height: 10rem;
+    margin: auto;
+    border-radius: 10%;
    
     background-color: blueviolet;
     display: flex;
     flex-direction: column;
+
+    margin-top: 1.25rem;
 }
 .botones{
     width: 100%;
     min-height: 4rem;
-    
+    margin-top: .625rem;
 
     display: grid;
     grid-template-columns: repeat(1 , 1fr);
-    gap:.5rem;
 }
 .boton{
     margin-left: 2.5rem;
@@ -319,9 +322,14 @@ p{
 }
 .opcion{
     height: auto;
-    text-align: center;
+    text-align: end;
+    margin-right: 2.5rem;
+    color: white;
 }
-.opcion.isActive{}
+.opcion.isActive{
+    color: black;
+    font-weight: 800;
+}
 
 .footer{
     height: auto;

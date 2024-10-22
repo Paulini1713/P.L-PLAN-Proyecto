@@ -46,7 +46,25 @@ document.addEventListener("DOMContentLoaded", function() {
     
     let opcion1 = document.querySelector('.opcion1')
     console.log( opcion1 )
+
+    let boton2 = document.querySelector('.boton2')
+    console.log( boton2 )
+    
+    let opcion2 = document.querySelector('.opcion2')
+    console.log( opcion2 )
+
+    let boton3 = document.querySelector('.boton3')
+    console.log( boton3 )
+    
+    let opcion3 = document.querySelector('.opcion3')
+    console.log( opcion3 )
     
     boton1.addEventListener(`click` , function(){
         opcion1.classList.toggle(`isActive`) 
+    } )
+    boton2.addEventListener(`click` , function(){
+        opcion2.classList.toggle(`isActive`) 
+    } )
+    boton3.addEventListener(`click` , function(){
+        opcion3.classList.toggle(`isActive`) 
     } )
