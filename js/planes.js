@@ -1,5 +1,6 @@
 'use strict'
 
+//Añado botón svg en pantallas pequeñas con un menú
 let headerButton = document.querySelector('.header-button')
 let ulNav = document.querySelector('.ul-nav')
 console.log( headerButton )
@@ -15,26 +16,26 @@ headerButton.addEventListener(`click` , function(){
 
 
 
-// Esperamos a que el DOM esté completamente cargado
+// Espero que el DOM esté cargado
 document.addEventListener('DOMContentLoaded', function() {
-    // Obtenemos todos los botones de "+ Info"
+    // Obtengo los botones de "+ Info"
     const buttonsInfo = document.querySelectorAll('.button-info');
 
-    // Recorremos cada botón y le añadimos un event listener
+    // Recorrp cada botón y le añadimos un event listener
     buttonsInfo.forEach(button => {
+
         button.addEventListener('click', function() {
-            // Encontramos la sección padre del botón
+            
             const section = this.closest('.section');
-            // Buscamos el div oculto en la sección
             const oculto = section.querySelector('.div.oculto');
 
-            // Hacemos visible el contenido oculto
+            // Hago visible el contenido oculto
             oculto.style.display = "block";
 
-            // Añadimos la funcionalidad del botón de cierre
+            // Añado la funcion del botón de cierre
             const closeButton = oculto.querySelector('.close-button');
             closeButton.addEventListener('click', function() {
-                oculto.style.display = "none"; // Ocultamos el contenido al hacer clic en la "X"
+                oculto.style.display = "none"; // Oculto el contenido al hacer clic en la "X"
             });
         });
     });

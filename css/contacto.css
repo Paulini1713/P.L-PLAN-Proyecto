@@ -279,11 +279,12 @@ a{
     transition: transform 0.2s ease; /*Transiciones de tiempo de las imágenes*/
     padding: .3125rem;
 }
+
 .tiktok:hover{
-    transform: scale(1.1) translateX(45%); /*Al ponerse encima de la imagen cambia su escala y se desplaza hacia la derecha*/
+    transform:  translateX(45%); /*Al ponerse encima de la imagen se desplaza hacia la derecha*/
 }
 .instagram:hover{
-    transform: scale(1.1) translateX(-45%); /*Al ponerse encima de la imagen cambia su escala y se desplaza hacia la izquierda*/
+    transform:  translateX(-45%); /*Al ponerse encima de la imagen se desplaza hacia la izquierda*/
 }
 @media (max-width: 1200px){
     .rrss{

@@ -1,5 +1,6 @@
 'use strict'
 
+//Añado botón svg en pantallas pequeñas con un menú
 let headerButton = document.querySelector('.header-button')
 let ulNav = document.querySelector('.ul-nav')
 console.log( headerButton )
@@ -11,7 +12,7 @@ headerButton.addEventListener(`click` , function(){
 
 
 
-
+//Añado un carrusel de 4 imágenes por columna
 document.addEventListener("DOMContentLoaded", function() {
     const carruseles = document.querySelectorAll('.div-cuerpo');
     
