@@ -303,7 +303,7 @@ p{
     opacity: 1; /*Al ser isActive la opacidad cambia*/
 }
 .botones{
-    width: 80%;
+    width: 90%;
     min-height: 30vh;
     margin: 1.875rem auto;
     background-color: blueviolet;
