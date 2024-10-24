@@ -17,3 +17,16 @@ headerButton.addEventListener(`click` , function(){
 //document.getElementsByName('nueva-pestana').forEach(element => {
     // element.addEventListener('click', () => window.open(element.attributes.getNamedItem('data-page').value))
 // });
+
+//Cambio la imagen de el proceso a seguir al darle click por otra imagen
+document.getElementById("img-proceso").addEventListener("click", function () {
+    
+    const img = document.getElementById("img-proceso");
+
+    if (img.src.includes("26(1).jpg")) {
+        img.src = "assets/alternativa(1).jpg"; 
+    } else {
+        // Vuelve a la imagen original
+        img.src = "assets/26(1).jpg"; 
+    }
+});
