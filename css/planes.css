@@ -308,11 +308,12 @@ p{
     }
 }
 .acordeon{
-    width: 37.5rem;
+    width: 100%;
     height: auto;
 
     overflow: hidden;
     text-align: center;
+    font-weight: 700;
 }
   
 .acordeon-item{
@@ -323,6 +324,8 @@ p{
     cursor: pointer;
     background-color: blueviolet;
     color: rgb(0, 0, 0);
+    letter-spacing: .125rem;
+    font-size: 1.5vw;
     
 }
 .acordeon-texto{
@@ -333,6 +336,7 @@ p{
 }
 .acordeon-texto p{
     margin: auto;
+    font-size: 1.5vw;
 }
 .modal {
     width: 100%; 
