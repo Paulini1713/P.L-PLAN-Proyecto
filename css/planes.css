@@ -44,6 +44,7 @@ button{
     box-shadow: .125rem .125rem .625rem rgb(42, 29, 36);
     color: black;
     background-color: rgb(173, 3, 252);
+    cursor: pointer;
 }
 
 button:hover{
@@ -306,6 +307,33 @@ p{
         flex-direction: column;
     }
 }
+.acordeon{
+    width: 37.5rem;
+    height: auto;
+
+    overflow: hidden;
+    text-align: center;
+}
+  
+.acordeon-item{
+    border: .1875rem solid rgb(236, 159, 255);
+}
+.acordeon-nombre{
+    padding: 1.25rem;
+    cursor: pointer;
+    background-color: blueviolet;
+    color: rgb(0, 0, 0);
+    
+}
+.acordeon-texto{
+    padding: .9375rem;
+    display: none;
+    background-color: rgb(236, 159, 255);
+
+}
+.acordeon-texto p{
+    margin: auto;
+}
 .modal {
     width: 100%; 
     height: 100%; 
@@ -343,6 +371,7 @@ p{
     color: black;
     cursor: pointer; /*Tipo de ratón al ponerlo encima*/
 }
+  
 .footer{
     height: auto;
     margin: 1.25rem auto 1.25rem;

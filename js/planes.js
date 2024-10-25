@@ -13,9 +13,6 @@ headerButton.addEventListener(`click` , function(){
 
 
 
-
-
-
 // Espero que el DOM esté cargado
 document.addEventListener('DOMContentLoaded', function() {
     // Obtengo los botones de "+ Info"
@@ -24,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Recorrp cada botón y le añadimos un event listener
     buttonsInfo.forEach(button => {
 
-        button.addEventListener('click', function() {
+        button.addEventListener( 'click' , function() {
             
             const section = this.closest('.section');
             const oculto = section.querySelector('.div.oculto');
@@ -41,4 +38,20 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+
+
+
+//Acordeón con especificaciones de los planes
+
+const headers = document.querySelectorAll( '.acordeon-nombre' );
+
+headers.forEach( header => {
+  header.addEventListener( 'click' , ( _ ) => {
+
+    const content = header.nextElementSibling;
+
+    content.style.display = content.style.display === 'block' ? 'none' : 'block';
+
+  });
+});
 

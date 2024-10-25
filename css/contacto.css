@@ -43,6 +43,7 @@ button{
     box-shadow: .125rem .125rem .625rem rgb(42, 29, 36);
     color: black;
     background-color: rgb(173, 3, 252);
+    cursor: pointer;
 }
 
 button:hover{
