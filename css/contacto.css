@@ -132,6 +132,7 @@ a{
 @media (max-width: 54.6875rem){
     .header-button{
         display: block;
+        margin: 0;
     }
     .ul-nav{
         display: none;
@@ -191,10 +192,15 @@ a{
     display: grid;
     grid-template-columns: repeat(2, 1fr); /*Se repiten dos columnas por fila*/
 }
+@media (max-width: 600px){
+    .article-meta{
+        grid-template-columns: 1fr;
+    }
+}
 .div-formulario{
     padding: 1.25rem;
 }
-@media (max-width: 800px){
+@media (max-width: 600px){
     .div-formulario{
         display: none;
     }
@@ -210,14 +216,20 @@ a{
     text-align: center;
     letter-spacing: .125rem; /*Espacio entre letras*/
 }
-.formulario{
-    margin: auto;
-    width: 60%; /*Ancho de la sección*/
-    font-weight: 600;
+@media (max-width: 875px){
+    .p-formulario{
+        font-size: 1.3vh;
+    }
 }
-@media (max-width: 800px){
+.formulario{
+    width: 80%;
+    margin-left: 3.125rem;
+}
+@media(max-width: 600px){
     .formulario{
-        width: 100%; /*En pantallas pequeñas cambia el ancho*/
+    margin: auto;
+    width: 100%; /*Ancho de la sección*/
+    font-weight: 600;
     }
 }
 .carpeta{

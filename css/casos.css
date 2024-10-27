@@ -331,20 +331,27 @@ p{
         font-size: 1vh;
     }
 }
-@media (max-width: 750px){
-    .botones{
-        
-    }
-}
 .boton{
-    margin-left: 2.5rem;
-    
+    margin-left: .3125rem;
+
+}
+@media (max-width: 750px){
+    .boton{
+    padding: .25rem; 
+    margin-right: 0;  
+    }
 }
 .opcion{
     height: auto;
     text-align: end;
     margin-right: 2.5rem;
     color: white;
+}
+@media (max-width: 1000px){
+    .opcion{
+        text-align: center;
+        margin-right: 0;
+    }
 }
 .opcion.isActive{
     color: black;

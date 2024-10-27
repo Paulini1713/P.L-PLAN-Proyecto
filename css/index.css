@@ -46,7 +46,6 @@ button{
     background-color: rgb(173, 3, 252); /*Fondo de color del botón*/
     cursor: pointer;
 }
-
 button:hover{
 /*Al poner el ratón sobre un botón cambia de color con hover*/
     background-color: rgb(226, 43, 226);
