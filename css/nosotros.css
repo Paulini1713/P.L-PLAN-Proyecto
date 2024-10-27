@@ -302,12 +302,29 @@ p{
     width: 100%;
     border-radius: .625rem .625rem 0 0;
 }
+@media (max-width: 1000px){
+    .div-item{
+        height: auto;
+    }
+    .div-item img{
+        background-size: cover;
+    }
+}
 .isActive {
     opacity: 1; /*Al ser isActive la opacidad cambia*/
 }
+.p-juntos{
+    font-size: 2vh;
+}
+@media (max-width: 1000px){
+    .p-juntos{
+        font-size: 1.2vh;
+        margin-top: 25px;
+    }
+}
 .botones{
     width: 90%;
-    min-height: 30vh;
+    height: 30vh;
     margin: 1.875rem auto;
     background-color: blueviolet;
     border-radius: 10%;
@@ -332,6 +349,17 @@ p{
     position: relative;
     gap: 5rem;
 }
+@media (max-width: 900px){
+    .ul-botones{
+        padding: .125rem;
+        margin-bottom: 1.25rem;
+    }
+}
+@media (max-width: 475px){
+    .ul-botones{
+        gap: .1875rem;
+    }
+}
 .li-botones{
     opacity: 2;
     margin: 1.25rem auto;
@@ -339,7 +367,7 @@ p{
 }
 .parrafo{
     margin: 2.5rem auto;
-
+    
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -351,6 +379,18 @@ p{
 .parrafo-p{
     opacity: 0; /*La opacidad es invisible, no se ve*/
     position: absolute;
+    font-size: 2vh;
+    margin-top: 1.875rem;
+}
+@media (max-width: 1000px){
+    .parrafo-p{
+     top: 0;
+    }
+}
+@media (max-width: 550px){
+    .parrafo-p{
+        font-size: 1.5vh;
+    }
 }
 .li-botones.isVisible{
     opacity: 1;
@@ -358,6 +398,11 @@ p{
     border-radius: 50%;
     padding: .625rem;
     background-color: rgb(226, 43, 226);
+}
+@media (max-width: 950px){
+    .li-botones{
+        margin: 0;
+    }
 }
 .parrafo-p.isVisible{
     opacity: 1;
