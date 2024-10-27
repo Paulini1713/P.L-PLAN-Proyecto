@@ -121,6 +121,7 @@ a{
 }
 .header-button{
     display: none;
+    list-style: circle;
 }
 .header-svg{
     width: 2rem;
@@ -214,6 +215,12 @@ a{
     /*background-color: aquamarine;*/
     padding-top: 1.25rem;
     padding-left: 6.25rem;
+}
+@media (max-width: 480px){
+    .div-ofrecer{
+        text-align: left;
+        padding: .125rem;
+    }
 }
 .h2-ofrecer{}
 .ul-ofrecer{
@@ -458,6 +465,11 @@ a{
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+}
+@media (max-width: 620px){
+    .article-meta{
+        grid-template-columns: 1fr;
+    }
 }
 .div-formulario{
     padding: 1.25rem;

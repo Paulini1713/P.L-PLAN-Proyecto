@@ -175,10 +175,15 @@ p{
          font-size: 11vh; /*El tamaño de la letra depende del tamaño de la pantalla*/
     }
 }
-@media ( max-width: 820px){
+@media ( max-width: 930px){
     .h1-plan{
-         font-size: 4vh;
+         font-size: 7vh;
 
+    }
+}
+@media (max-width: 580px){
+    .h1-plan{
+        font-size: 4vh;
     }
 }
 .planes{
@@ -212,7 +217,7 @@ p{
 }
 .main .section .div{
     width: 50%; /*Ancho máximo de la sección*/
-    min-height: 25rem;
+    height: auto;
     background-color: black;
 }
 .div .img{
@@ -244,18 +249,21 @@ p{
 .close:hover{
     transform: none;
 }
-.oculto {
+.oculto{
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo semi-transparente */
+
     display: none; 
     position: absolute; 
     top: 50%; /* Centrado verticalmente */
     left: 50%; /* Centrado horizontalmente */
     transform: translate(-50%, -50%); /* Ajustoel origen al centro */
     z-index: 1; /*Se coloca por encima*/
-    background-color: rgba(255, 255, 255, 0.9); /* Fondo semi-transparente */
+    
     padding: .625rem; 
     border-radius: .125rem; 
     box-shadow: 0 .25rem .5rem rgba(0, 0, 0, 0.2); 
 }
+
 .texto{
     width: 50%;
     /*min-height: 400px;*/
@@ -269,6 +277,7 @@ p{
 
     text-align: center;
     margin-top: .625rem;
+    font-size: 1.2vh;
 }
 
 .h2{
@@ -291,9 +300,21 @@ p{
     justify-content: center;
     align-items: center;
 }
-@media (max-width: 770px){
+@media (max-width: 1200px){
     .p{
-        font-size: 2.5vw;
+        font-size: 1.5vh;
+    }
+}
+@media (max-width: 800px){
+    .p{
+        font-size: 1.2vh;
+        padding: .1875rem;
+        margin: 0;
+    }
+}
+@media (max-width: 610px){
+    .p{
+        font-size: 1vh;
     }
 }
 .h3{
