@@ -67,7 +67,6 @@ a{
     justify-content: space-between;
     align-items: center;
     padding: .625rem;
-
 }
 .div-icono{   
 }
@@ -81,6 +80,7 @@ a{
     min-height: 2.5rem;
 }
 .nav .isVisible{
+    width: 40%;
     height: auto;
     background-color: blueviolet; 
 
@@ -90,7 +90,8 @@ a{
     align-items: center;
     
     position: absolute;
-    top: 12%; /* Asegura que el menú aparezca justo debajo del header */ 
+    top: 8%; /* Asegura que el menú aparezca justo debajo del header */ 
+    right: 0;
     z-index: 1;
     border-radius: 20%;
     text-align: center; /*Que el texto se centre*/
@@ -130,7 +131,7 @@ a{
 
 @media (max-width: 54.6875rem){
     .header-button{
-        display: block;
+        display: block; 
     }
     .ul-nav{
         display: none;

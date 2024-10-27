@@ -96,19 +96,21 @@ p{
     min-height: 2.5rem;
 }
 .nav .isVisible{
+    width: 40%;
     height: auto;
     background-color: blueviolet; 
 
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /*Elementos de la lista ocultos que se coloquen en columna en pantallas pequeñas*/
     justify-content: center;
     align-items: center;
     
     position: absolute;
-    top: 12%; /* El menú aparece debajo del header */ 
-    z-index: 1; /*Se coloca por encima de todo*/
-    border-radius: 20%; /*Borde más redondo*/
-    text-align: center;
+    top: 8%; /* Asegura que el menú aparezca justo debajo del header */ 
+    right: 0;
+    z-index: 1;
+    border-radius: 20%;
+    text-align: center; /*Que el texto se centre*/
 }
 .ul-nav{
     display: flex;
