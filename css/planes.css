@@ -213,6 +213,7 @@ p{
 @media (max-width: 1320px){
     .main .section{
         flex-direction: column; /*En pantallas más pequeñas se coloca en columna*/
+        min-height: auto;
     }
 }
 .main .section .div{
