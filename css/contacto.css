@@ -224,6 +224,11 @@ a{
 .formulario{
     width: 80%;
     margin-left: 3.125rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: .3125rem;
 }
 @media(max-width: 600px){
     .formulario{
