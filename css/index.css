@@ -214,7 +214,7 @@ a{
     min-height: 12.5rem;
     /*background-color: aquamarine;*/
     padding-top: 1.25rem;
-    padding-left: 6.25rem;
+    padding-left: 1.25rem;
 }
 @media (max-width: 480px){
     .div-ofrecer{
@@ -454,10 +454,10 @@ a{
     border-radius: 10%;
 }
 .img-ella:hover{
-    transform: translateX(440px); /*Al colocar el ratón encima que la imagen se desplace hacia el lado derecho*/
+    transform: scale(1.1); /*Al colocar el ratón encima que la imagen se desplace hacia el lado derecho*/
 }
 .img-el:hover{
-    transform: translateX(-440px); /*Al colocar el ratón encima que la imagen se desplace hacia el lado izquierdo*/
+    transform: scale(1.1); /*Al colocar el ratón encima que la imagen se desplace hacia el lado izquierdo*/
 }
 .article-meta{
     min-height: 18.75rem;

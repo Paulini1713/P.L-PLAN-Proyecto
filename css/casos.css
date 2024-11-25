@@ -318,6 +318,10 @@ p{
         margin-top: 3.75rem;
     }
 }
+.h3-botones{
+    min-height: auto;
+    text-align: center;
+}
 .botones{
     width: 100%;
     min-height: 4rem;
@@ -333,7 +337,6 @@ p{
 }
 .boton{
     margin-left: .3125rem;
-
 }
 @media (max-width: 750px){
     .boton{
