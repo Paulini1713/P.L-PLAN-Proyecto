@@ -25,7 +25,11 @@
         <div class="div-icono">
             <a href="index.html" rel="noopener noreferrer" title="index" target="_blank">
                 <!--Se usa un alt por si no carga la página se vea ese texto-->
-                <img src="assets/JPPLANICONO.png" alt="P.LPLANICONO" class="img-icono">
+            <picture>
+                <source srcset="assets/JPPLANICONO.webp">
+                <source srcset="assets/JPPLANICONO.jpg">
+                <img src="assets/JPPLANICONO.png" alt="P.LPLANICONO" class="img-icono">  
+            </picture>
             </a>
         </div>
         <nav class="nav isVisible">
@@ -131,9 +135,10 @@
             <!--Imagen del proceso-->
                 <h2 id="h2-proceso">Proceso a seguir</h2>
                 <picture>
-                    <source srcset="">
-                    <source srcset="">
+                    <source srcset="assets/26(1).webp">
+                    <source srcset="assets/26(1).png">
                     <img src="assets/26(1).jpg" alt="img proceso" id="img-proceso" loading="lazy">
+                </picture>
             </div>
             <div id="div-orden">
             <!--Pasos a seguir del proceso-->

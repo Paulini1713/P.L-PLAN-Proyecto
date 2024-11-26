@@ -327,7 +327,7 @@ p{
 }
 .botones{
     width: 90%;
-    height: 30vh;
+    height: auto;
     margin: 1.875rem auto;
     background-color: var(--color-principal);
     border-radius: 10%;
