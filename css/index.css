@@ -56,10 +56,13 @@ a{
     color: black;
     z-index: 1;
 }
-
+:root{   /*Selector root para custom properties*/
+    --color-principal: blueviolet; 
+    --color-boton: rgb(173, 3, 252);
+}
 .header{
     width: 100%; /*Usar todo el ancho de la página*/
-    background-color: blueviolet;
+    background-color: var(--color-principal);
 
     display: flex;
     flex-flow: row nowrap;
@@ -81,7 +84,7 @@ a{
 .nav .isVisible{
     width: 40%;
     height: auto;
-    background-color: blueviolet; 
+    background-color: var(--color-principal); 
 
     display: flex;
     flex-direction: column; /*Elementos de la lista ocultos que se coloquen en columna en pantallas pequeñas*/
@@ -208,7 +211,7 @@ a{
     border: .125rem solid rgb(39, 24, 32);
     box-shadow: .125rem .125rem .625rem rgb(42, 29, 36);
     color: black;
-    background-color: rgb(173, 3, 252);
+    background-color: var(--color-boton);
 }
 .div-ofrecer{
     min-height: 12.5rem;
@@ -233,7 +236,7 @@ a{
 .section-planes{
     width: 100%;
     min-height: 25rem;
-    background-color: blueviolet; /*Color de la sección de fondo*/
+    background-color: var(--color-principal); /*Color de la sección de fondo*/
 
     display: flex;
     flex-flow: column nowrap;
@@ -294,7 +297,7 @@ a{
     border: .125rem solid rgb(39, 24, 32);
     box-shadow: .125rem .125rem .625rem rgb(42, 29, 36);
     color: black;
-    background-color: rgb(173, 3, 252);
+    background-color: var(--color-boton);
     
 }
 #div-proceso{
@@ -361,7 +364,7 @@ a{
 #p-seguimiento{}
 .article-nosotros{
     min-height: 25rem;
-    background-color: blueviolet;
+    background-color: var(--color-principal);
 
     display: flex;
     flex-flow: row nowrap;
@@ -397,7 +400,7 @@ a{
     border: .125rem solid rgb(39, 24, 32);
     box-shadow: .125rem .125rem .625rem rgb(42, 29, 36);
     color: black;
-    background-color: rgb(173, 3, 252);
+    background-color: var(--color-boton);
 }
 .div-caras{
     width: 60%;
@@ -495,7 +498,7 @@ a{
     border: .125rem solid rgb(39, 24, 32);
     box-shadow: .125rem .125rem .625rem rgb(42, 29, 36);
     color: black;
-    background-color: rgb(173, 3, 252);
+    background-color: var(--color-boton);
 
 }
 .formulario{

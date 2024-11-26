@@ -60,9 +60,13 @@ a{
 p{
     font-size: 2.5vh;
 }
+:root{
+    --color-principal: blueviolet; 
+    --color-acordeon: rgb(236, 159, 255);
+}
 .header{
     width: 100%;
-    background-color: blueviolet;
+    background-color: var(--color-principal);
 
     display: flex;
     flex-flow: row nowrap;
@@ -85,7 +89,7 @@ p{
 .nav .isVisible{
     width: 40%;
     height: auto;
-    background-color: blueviolet; 
+    background-color: var(--color-principal); 
 
     display: flex;
     flex-direction: column; /*Elementos de la lista ocultos que se coloquen en columna en pantallas pequeñas*/
@@ -187,7 +191,7 @@ p{
     }
 }
 .planes{
-    color: blueviolet;
+    color: var(--color-principal);
 }
 .section {
     background-color: white;
@@ -201,7 +205,7 @@ p{
     width: 100%;
     
     min-height: 31.25rem;
-    background-color: rgb(236, 159, 255);
+    background-color: var(--color-acordeon);
 
     display: flex;
     flex-flow: row nowrap; /*Se coloca en fila */
@@ -321,7 +325,7 @@ p{
 .h3{
     padding: 1.25rem;
     margin: 1.875rem;
-    border: .3125rem solid blueviolet;
+    border: .3125rem solid var(--color-principal);
 }
 
 .section.reverse{
@@ -347,12 +351,12 @@ p{
 }
   
 .acordeon-item{
-    border: .1875rem solid rgb(236, 159, 255);
+    border: .1875rem solid var(--color-acordeon);
 }
 .acordeon-nombre{
     padding: 1.25rem;
     cursor: pointer;
-    background-color: blueviolet;
+    background-color: var(--color-principal);
     color: rgb(0, 0, 0);
     letter-spacing: .125rem;
     font-size: 1.5vw;
@@ -361,7 +365,7 @@ p{
 .acordeon-texto{
     padding: .9375rem;
     display: none;
-    background-color: rgb(236, 159, 255);
+    background-color: var(--color-acordeon);
 
 }
 .acordeon-texto p{
@@ -396,7 +400,7 @@ p{
     float: right; /*Se mueve a la derecha del contenedor*/
     font-size: 1.75rem; 
     font-weight: bold;
-    border: .3125rem solid rgb(236, 159, 255);
+    border: .3125rem solid var(--color-acordeon);
 }
 
 .close:hover{

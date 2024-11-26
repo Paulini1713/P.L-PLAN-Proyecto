@@ -62,9 +62,12 @@ a{
 p{
     font-size: 1vw;
 }
+:root{
+    --color-principal: blueviolet; 
+}
 .header{
     width: 100%;
-    background-color: blueviolet;
+    background-color: var(--color-principal);
 
     display: flex;
     flex-flow: row nowrap;
@@ -88,7 +91,7 @@ p{
 .nav .isVisible{
     width: 40%;
     height: auto;
-    background-color: blueviolet; 
+    background-color: var(--color-principal); 
 
     display: flex;
     flex-direction: column; /*Elementos de la lista ocultos que se coloquen en columna en pantallas pequeñas*/
@@ -163,7 +166,7 @@ p{
 
 }
 .nosotros{
-    color: blueviolet;
+    color: var(--color-principal);
 }
 .img-empieza{
     display: flex;
@@ -250,7 +253,7 @@ p{
     position: absolute;
     top: 50%;
     transform: translateY(-50%); /*Se traslada hacia la izquierda*/
-    background-color: blueviolet;
+    background-color: var(--color-principal);
     border: none;
     cursor: pointer; /*Tipo de cursor del ratón*/
     padding: .625rem;
@@ -326,7 +329,7 @@ p{
     width: 90%;
     height: 30vh;
     margin: 1.875rem auto;
-    background-color: blueviolet;
+    background-color: var(--color-principal);
     border-radius: 10%;
 
     padding: 1.875rem;

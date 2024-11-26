@@ -56,9 +56,12 @@ a{
     text-decoration: none;
     z-index: 1;
 }
+:root{
+    --color-principal: blueviolet; 
+}
 .header{
     width: 100%;
-    background-color: blueviolet; /*El fondo de la sección se ve de ese color*/
+    background-color: var(--color-principal); /*El fondo de la sección se ve de ese color*/
 
     display: flex;
     flex-flow: row nowrap;
@@ -83,7 +86,7 @@ a{
 .nav .isVisible{
     width: 40%;
     height: auto;
-    background-color: blueviolet; 
+    background-color: var(--color-principal); 
 
     display: flex;
     flex-direction: column; /*Elementos de la lista ocultos que se coloquen en columna en pantallas pequeñas*/
@@ -159,7 +162,7 @@ a{
 
 }
 .nosotros{
-    color: blueviolet;
+    color: var(--color-principal);
 }
 .img-empieza{
     display: flex;
@@ -182,12 +185,12 @@ a{
     margin-right: 6.25rem; /*Margen derecho en el contenedor*/
 }
 .contacto{
-    color: blueviolet;
+    color: var(--color-principal);
 }
 
 .article-meta{
     min-height: 25rem;
-    background-color: blueviolet;
+    background-color: var(--color-principal);
 
     display: grid;
     grid-template-columns: repeat(2, 1fr); /*Se repiten dos columnas por fila*/
@@ -327,7 +330,7 @@ a{
     width: 100%;
     min-height: 3.125rem;
     height: auto;
-    background-color: blueviolet;
+    background-color: var(--color-principal);
 
     display: flex;
     flex-flow: row;

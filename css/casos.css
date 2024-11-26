@@ -73,9 +73,12 @@ p{
     align-items: center;
     text-align: center;
 }
+:root{
+    --color-principal: blueviolet; 
+}
 .header{
     width: 100%;
-    background-color: blueviolet;
+    background-color: var(--color-principal);
 
     display: flex;
     flex-flow: row nowrap;
@@ -98,7 +101,7 @@ p{
 .nav .isVisible{
     width: 40%;
     height: auto;
-    background-color: blueviolet; 
+    background-color: var(--color-principal); 
 
     display: flex;
     flex-direction: column; /*Elementos de la lista ocultos que se coloquen en columna en pantallas pequeñas*/
@@ -178,10 +181,10 @@ p{
 
 }
 .casos{
-    color: blueviolet;
+    color: var(--color-principal);
 }
 .exito{
-    color: blueviolet; /*Color de la letra*/
+    color: var(--color-principal); /*Color de la letra*/
     display: flex;
     flex-flow: row;
     justify-content: space-between;
@@ -304,7 +307,7 @@ p{
     margin: auto;
    
    
-    background-color: blueviolet;
+    background-color: var(--color-principal);
     display: flex;
     flex-direction: column;
 
