@@ -70,7 +70,8 @@ a{
     align-items: center;
     padding: .625rem;
 }
-.div-icono{   
+.div-icono{ 
+    height: auto 
 }
 .img-icono{
     width: 15%;
@@ -225,7 +226,9 @@ a{
         padding: .125rem;
     }
 }
-.h2-ofrecer{}
+.h2-ofrecer{
+    width: 40%
+}
 .ul-ofrecer{
     margin: .3125rem;
 }
@@ -266,6 +269,7 @@ a{
     }
 }
 .div-columnas{
+    width: 100%
 }
 .h4-planes{
     margin: .3125rem auto .625rem; 
@@ -350,18 +354,34 @@ a{
     font-weight: 700;
     text-decoration: underline; /*Colocar una linea por debajo del enunciado*/
 }
-#h4-orden{}
-#p-orden{}
-#h4-test{}
-#ul-test{}
+#h4-orden{
+    font-size: 500;
+}
+#p-orden{
+    margin: .3125rem;
+}
+#h4-test{
+    font-size: 500;
+}
+#ul-test{
+    text-decoration: solid;
+}
 #li-test{
     padding: .1875rem;
     list-style: circle;
 }
-#h4-entrenamiento{}
-#p-entrenamos{}
-#h4-guia{}
-#p-seguimiento{}
+#h4-entrenamiento{
+    font-size: 500;
+}
+#p-entrenamos{
+    margin: .3125rem;
+}
+#h4-guia{
+    font-size: 500;
+}
+#p-seguimiento{
+    margin: .3125rem;
+}
 .article-nosotros{
     min-height: 25rem;
     background-color: var(--color-principal);
@@ -542,7 +562,9 @@ a{
     justify-content: space-evenly;
     align-items: center; 
 }
-.li-interno{}
+.li-interno{
+    font-weight: 500;
+}
 .ul-sobre{
     display: flex;
     flex-flow: row;
@@ -569,5 +591,9 @@ a{
 .li-aviso{
     margin: 1.25rem;
 }
-.h5-aviso{}
-.h5-politica{}
+.h5-aviso{
+    font-weight: 800;
+}
+.h5-politica{
+    font-weight: 800;
+}

@@ -76,7 +76,7 @@ p{
     padding: .625rem; /*Espacio en el contendor con lo que contiene*/
 }
 .div-icono{
-    
+    height: auto 
 }
 .img-icono{
     width: 15%;

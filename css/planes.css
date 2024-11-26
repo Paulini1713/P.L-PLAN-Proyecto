@@ -75,7 +75,9 @@ p{
     padding: .625rem;
 
 }
-.div-icono{}
+.div-icono{
+    height: auto 
+}
 .img-icono{
     width: 15%;
     background-size: cover;
@@ -403,8 +405,6 @@ p{
     border: .3125rem solid var(--color-acordeon);
 }
 
-.close:hover{
-}
 .close:focus {
     color: black;
     cursor: pointer; /*Tipo de ratón al ponerlo encima*/

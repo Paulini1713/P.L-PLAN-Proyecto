@@ -87,7 +87,9 @@ p{
     padding: .625rem;
 
 }
-.div-icono{}
+.div-icono{
+    height: auto;
+}
 .img-icono{
     width: 15%; /*Ancho se la sección*/
     background-size: cover; /*Se ajusta la imagen al contenedor*/
@@ -299,6 +301,7 @@ p{
     }
 }
 .div-texto{
+    font-weight: 500;
 }
 
 .section-botones{
