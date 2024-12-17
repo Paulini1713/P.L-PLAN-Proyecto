@@ -29,6 +29,7 @@
                 });
             }
 
+            //Pasa a la siguiente imagen
             function nextImage() {
                 currentIndex = (currentIndex + 1) % totalImages;
                 showImage(currentIndex);
@@ -46,11 +47,12 @@
         { boton: '.boton3', opcion: '.opcion3' }
     ];
 
-    // Recorro los contenedores y añado los event listeners
+    // Recorro los contenedores y añado los event listeners para activar al hacer click en el botón
     botonesYopciones.forEach(item => {
         const boton = document.querySelector(item.boton);
         const opcion = document.querySelector(item.opcion);
-
+    
+        //Muestro por consola los botones y las opciones
         console.log(boton);
         console.log(opcion);
 
