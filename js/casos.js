@@ -2,8 +2,8 @@
 
 (function () {
     // Añado botón svg en pantallas pequeñas con un menú
-    let headerButton = document.querySelector('.header-button');
-    let ulNav = document.querySelector('.ul-nav');
+    const headerButton = document.querySelector('.header-button');
+    const ulNav = document.querySelector('.ul-nav');
     console.log(headerButton);
     console.log(ulNav);
 
@@ -39,34 +39,23 @@
         });
     });
 
-    // Animaciones botones
-    let boton1 = document.querySelector('.boton1');
-    console.log(boton1);
+    // Agrupo los botones y las opciones en contenedores
+    const botonesYopciones = [
+        { boton: '.boton1', opcion: '.opcion1' },
+        { boton: '.boton2', opcion: '.opcion2' },
+        { boton: '.boton3', opcion: '.opcion3' }
+    ];
 
-    let opcion1 = document.querySelector('.opcion1');
-    console.log(opcion1);
+    // Recorro los contenedores y añado los event listeners
+    botonesYopciones.forEach(item => {
+        const boton = document.querySelector(item.boton);
+        const opcion = document.querySelector(item.opcion);
 
-    let boton2 = document.querySelector('.boton2');
-    console.log(boton2);
+        console.log(boton);
+        console.log(opcion);
 
-    let opcion2 = document.querySelector('.opcion2');
-    console.log(opcion2);
-
-    let boton3 = document.querySelector('.boton3');
-    console.log(boton3);
-
-    let opcion3 = document.querySelector('.opcion3');
-    console.log(opcion3);
-
-    boton1.addEventListener('click', function () {
-        opcion1.classList.toggle('isActive');
-    });
-
-    boton2.addEventListener('click', function () {
-        opcion2.classList.toggle('isActive');
-    });
-
-    boton3.addEventListener('click', function () {
-        opcion3.classList.toggle('isActive');
+        boton.addEventListener('click', function () {
+            opcion.classList.toggle('isActive');
+        });
     });
 })();
