@@ -1,19 +1,11 @@
-
-
 'use strict';
 
 (function () {
     // Añado botón svg en pantallas pequeñas con un menú
     let headerButton = document.querySelector('.header-button');
     let ulNav = document.querySelector('.ul-nav');
-    console.log(headerButton);
-    console.log(ulNav);
 
-    headerButton.addEventListener('click', function () {
-        ulNav.classList.toggle('isVisible');
-    });
-
-// let empiezaButton = document.querySelector('.botton-empieza');
+ // let empiezaButton = document.querySelector('.botton-empieza');
 
 // empiezaButton.addEventListener('click', () => window.open('nosotros.html'));
 
@@ -22,16 +14,23 @@
 // });
 
 
-    // Cambio la imagen del proceso al darle click por otra imagen
-    document.getElementById("img-proceso").addEventListener("click", function () {
-        const img = document.getElementById("img-proceso");
+    // Función handler genérica para eventos
+    function handler(event) {
+        if (event.type === 'click' && event.target === headerButton) {
+            ulNav.classList.toggle('isVisible');
+        } else if (event.type === 'click' && event.target.id === 'img-proceso') {
+            const img = document.getElementById("img-proceso");
 
-        if (img.src.includes("26(1).jpg")) {
-            img.src = "assets/alternativa(1).jpg";
-        } else {
-            // Vuelve a la imagen original
-            img.src = "assets/26(1).jpg";
+            if (img.src.includes("26(1).jpg")) {
+                img.src = "assets/alternativa(1).jpg";
+            } else {
+                // Vuelve a la imagen original
+                img.src = "assets/26(1).jpg";
+            }
         }
-    });
+    }
 
+    // Asigno eventos a los elementos usando el handler
+    headerButton.addEventListener('click', handler);
+    document.getElementById("img-proceso").addEventListener("click", handler);
 })();
