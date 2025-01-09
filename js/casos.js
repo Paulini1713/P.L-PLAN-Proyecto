@@ -63,8 +63,6 @@
 //})();
 
 
-'use strict';
-
 (function () {
     // Añado botón svg en pantallas pequeñas con un menú
     const headerButton = document.querySelector('.header-button');
