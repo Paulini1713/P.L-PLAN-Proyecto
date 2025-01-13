@@ -84,7 +84,7 @@
         requestAnimationFrame( step );
     }
 
-    // Función para iniciar la animación al pasar el ratón sobre la imagen
+    // Función para iniciar animación al pasar el ratón sobre la imagen
     function addAnimation( img ) {
         animate({
 

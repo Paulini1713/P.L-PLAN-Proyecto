@@ -360,26 +360,26 @@ a{
 #p-orden{
     margin: .3125rem;
 }
-#h4-test{
+#h4-orden-test{
     font-size: 500;
 }
-#ul-test{
+#ul-orden-test{
     text-decoration: solid;
 }
-#li-test{
+#li-orden-test{
     padding: .1875rem;
     list-style: circle;
 }
-#h4-entrenamiento{
+#h4-orden-entrenamiento{
     font-size: 500;
 }
-#p-entrenamos{
+#p-orden-entrenamos{
     margin: .3125rem;
 }
-#h4-guia{
+#h4-orden-guia{
     font-size: 500;
 }
-#p-seguimiento{
+#p-orden-seguimiento{
     margin: .3125rem;
 }
 .article-nosotros{
@@ -550,31 +550,31 @@ a{
     width: 100%;
     min-height: 6.25rem;
 }
-.div-sobre{
+.footer-div-sobre{
     margin-top: 1.25rem; /*Margen por encima*/
 }
-.h4-sobre{
+.footer-h4-sobre{
     text-align: center;
 }
-.ul-interno{
+.footer-ul-interno{
     display: flex;
     flex-flow: row;
     justify-content: space-evenly;
     align-items: center; 
 }
-.li-interno{
+.footer-li-interno{
     font-weight: 500;
 }
-.ul-sobre{
+.footer-ul-sobre{
     display: flex;
     flex-flow: row;
     justify-content: center;
     align-items: center; 
 }
-.li-sobre{
+.footer-li-sobre{
     margin: 1.875rem;
 }
-.div-linea{
+.footer-div-linea{
     border-top: .0625rem solid black;
     padding: 0;
     width: 100%;
@@ -582,18 +582,18 @@ a{
 .footer-debajo{
     min-height: 3.125rem;
 }
-.ul-aviso{
+.footer-ul-aviso{
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
 }
-.li-aviso{
+.footer-li-aviso{
     margin: 1.25rem;
 }
-.h5-aviso{
+.footer-h5-aviso{
     font-weight: 800;
 }
-.h5-politica{
+.footer-h5-politica{
     font-weight: 800;
 }
