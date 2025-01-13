@@ -70,7 +70,7 @@ a{
     padding: .625rem;
 
 }
-.div-icono{
+.header-div-icono{
     height: auto 
 }
 .img-icono{
@@ -144,7 +144,7 @@ a{
 .main{
     width: 100%;
 }
-.div-img{
+.main-div-img{
     min-height: 85vh;
 
     display: flex;
@@ -175,7 +175,7 @@ a{
     object-fit: cover;
     padding: .1875rem;
 }
-.h1{
+.main-h1{
     color: black;
     font-size: 10vw;
     font-family: "Protest Guerrilla", sans-serif;
