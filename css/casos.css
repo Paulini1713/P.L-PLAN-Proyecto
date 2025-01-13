@@ -87,10 +87,10 @@ p{
     padding: .625rem;
 
 }
-.div-icono{
+.header-div-icono{
     height: auto;
 }
-.img-icono{
+.header-img-icono{
     width: 15%; /*Ancho se la sección*/
     background-size: cover; /*Se ajusta la imagen al contenedor*/
     background-attachment: fixed;
@@ -173,7 +173,7 @@ p{
     background-position: center center;
 
 }
-.h1{
+.main-h1{
     margin: auto;
     color: white;
     font-size: 10vw; /*Tamaño de la letra dependiendo del ancho*/
@@ -182,10 +182,10 @@ p{
     font-style: normal;
 
 }
-.casos{
+.main-casos{
     color: var(--color-principal);
 }
-.exito{
+.main-exito{
     color: var(--color-principal); /*Color de la letra*/
     display: flex;
     flex-flow: row;
@@ -193,7 +193,7 @@ p{
     align-items: center;
 }
 @media (max-width: 950px){
-    .exito{
+    .main-exito{
         flex-flow: column;
     }
 }
@@ -267,7 +267,7 @@ p{
     visibility: visible; /*Se hace visible la imagen*/
     transition: opacity 0.5s ease-in-out, visibility 0s; /*Transición con la opacidad y la visibilidad en el cambio de imagen*/
 }
-.texto{
+.column-texto{
     width: 75%;
     /*min-height: 400px;*/
     /*background-color: bisque;*/
@@ -279,11 +279,11 @@ p{
     align-items: center;
 }
 
-.h2{
+.column-h2{
     padding: .625rem;
     margin: .625rem auto 1.25rem;
 }
-.caso{
+.column-caso{
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -293,14 +293,14 @@ p{
     .div-cuerpo {
         width: 100%;
     }
-    .texto {
+    .column-texto {
         width: 90%; /*Ancho en pantallas más pequeñas*/
     }
     .p {
         width: 100%;
     }
 }
-.div-texto{
+.column-div-texto{
     font-weight: 500;
 }
 
