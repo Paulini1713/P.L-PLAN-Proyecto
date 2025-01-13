@@ -75,7 +75,7 @@ p{
     align-items: center;
     padding: .625rem; /*Espacio en el contendor con lo que contiene*/
 }
-.div-icono{
+.header-div-icono{
     height: auto 
 }
 .img-icono{
@@ -148,7 +148,7 @@ p{
 .main{
     width: 100%;
 }
-.div-img{
+.main-div-img{
     min-height: 85vh;
 
     display: flex;
@@ -180,7 +180,7 @@ p{
     object-fit: cover; 
     padding: .1875rem;
 }
-.h1{
+.main-h1{
     margin: auto;
     color: black;
     font-size: 10vw; /*Tamaño de la letra se ajusta al ancho de la pantalla*/
@@ -199,7 +199,7 @@ p{
     align-items: center;
 
 }
-.h2-jp{
+.nosotros-h2-jp{
     margin: 1.25rem auto 2.5rem;
     text-align: center;
 }
